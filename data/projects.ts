@@ -14,7 +14,7 @@ interface ProjectProps {
 export const projects: ProjectProps[] = [
   {
     name: "Crunch Fitness V2",
-    description: "Full-stack remodel of the crunch fitness website, inspired by my local gym. Features include user authentication using next-auth, a monthly membership payments system using stripe, a hosted postgres database on Railway to store users' workouts, and more. Prisma was used as the ideal ORM to facilitate operations and queries on the database, as well as integrate with Next-Auth. As for now, authenticated users have the ability to create, update, and delete workouts. Future additions may be to include a nutrition tracker or a system where users can track their stats (height, weight, bf%).",
+    description: "Full-stack remodel of the crunch fitness website, inspired by my local gym. Features include user authentication using next-auth, a monthly membership payments system using stripe, a hosted postgres database on Railway to store users' workouts, and more. Prisma was used as the ideal ORM to facilitate operations and queries on the database, as well as integrate with Next-Auth. Currently, authenticated users have the ability to create, update, and delete workouts. Future additions may be to include a nutrition tracker or a system where users can track their stats (such as height, weight, bf%, etc.).",
     tech: [
       "typescript",
       "nextjs",
@@ -41,7 +41,7 @@ export const projects: ProjectProps[] = [
   {
     name: "SRBLOGS",
     description:
-      "Articles are mainly geared towards programming and computer science, but I also sprinkle in other topics that interest me and perhaps visitors as well. Due to the relatively broad scope in content — or for lack of a better name — I ensured to title to domain appropriately.",
+      "Articles are mainly geared towards programming and computer science, but I also sprinkle in other topics that interest me and perhaps visitors as well. Due to the relatively broad scope in content — or for lack of a better name — I ensured to title the domain appropriately.",
     tech: ["nextjs", "mdx", "tailwindcss", "typescript", "framer-motion"],
     demo: "https://srblog.vercel.app/",
     repository: "https://github.com/siamr902/srblogs",
