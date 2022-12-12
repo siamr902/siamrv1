@@ -21,9 +21,9 @@ const NavigationInfo = () => {
     return (
       <svg width={width} height="35" xmlns="http://www.w3.org/2000/svg">
         <path
-          d={`m 0 0 l ${width} 2 l ${width * -1} 3 l ${width} 4 l ${
-            width * -1
-          } 5`}
+          // d={`m 0 0 l ${width} 2 l ${width * -1} 3 l ${width} 4 l ${
+          //   width * -1
+          // } 5`}
           fill="transparent"
           strokeWidth="3"
           strokeLinecap="round"
