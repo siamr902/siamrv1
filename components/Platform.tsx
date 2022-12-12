@@ -15,5 +15,5 @@ const Platform = ({ Icon, src }: LinksProps) => {
     </>
   );
 };
-
+ 
 export default Platform;
