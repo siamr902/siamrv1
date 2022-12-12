@@ -50,7 +50,7 @@
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.6));
 }
 
-/* styles for titles */
+/* titles */
 .section-title::before {
   content: "⌇ ";
   transform: translateY(-50%);
