@@ -29,7 +29,7 @@ const ContactForm = () => {
 
   useEffect(() => {
     reset();
-  }, [isSubmitSuccessful]);
+  }, [isSubmitSuccessful, reset]);
 
   const onSubmit: SubmitHandler<FormData> = (data) => {
     emailjs

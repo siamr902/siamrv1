@@ -43,7 +43,7 @@ const NavigationInfo = () => {
     >
       {menuItems.map((menuItem) =>
         menuItem.name === "Blog" ? (
-          <a href={menuItem.href} key={menuItem.name} target="_blank">
+          <a href={menuItem.href} key={menuItem.name} target="_blank" rel="noopener noreferrer">
             <motion.div
               variants={child}
               transition={{ duration: 1 }}

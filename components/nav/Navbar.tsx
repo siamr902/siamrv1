@@ -23,7 +23,7 @@ const Navbar = () => {
   useEffect(() => {
     const theme = darkMode ? "dark" : "light";
     setTheme(theme);
-  }, [darkMode]);
+  }, [darkMode, setTheme]);
 
   if (!mounted) return null;
 
