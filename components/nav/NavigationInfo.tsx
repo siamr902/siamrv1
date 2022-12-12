@@ -3,7 +3,6 @@ import Link from "next/link";
 import React, { ReactNode } from "react";
 import { menuItems } from "../../data/menu-items";
 import { childOpacity as child } from "../../utils/animation-children";
-import styles from "../../styles/svg.module.css";
 
 const variants: Variants = {
   start: {
@@ -47,7 +46,7 @@ const NavigationInfo = () => {
             <motion.div
               variants={child}
               transition={{ duration: 1 }}
-              className={`menu-item ${styles.link}`}
+              className="menu-item linksvg"
             >
               <motion.div
                 whileTap={{ scale: 0.9 }}
@@ -63,7 +62,7 @@ const NavigationInfo = () => {
             <motion.div
               variants={child}
               transition={{ duration: 1 }}
-              className={`menu-item ${styles.link}`}
+              className="menu-item linksvg"
             >
               <motion.div
                 whileTap={{ scale: 0.9 }}

@@ -12,7 +12,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply min-h-screen overflow-x-hidden dark:bg-[#222] bg-zinc-100 scrollbar-thin dark:scrollbar-track-[#111] dark:scrollbar-thumb-black scrollbar-track-white scrollbar-thumb-gray-300 transition ease-linear;
+    @apply min-h-screen dark:bg-[#222] bg-zinc-100 scrollbar-thin dark:scrollbar-track-[#111] dark:scrollbar-thumb-black scrollbar-track-white scrollbar-thumb-gray-300 transition ease-linear;
   }
 }
 
@@ -100,4 +100,19 @@
   font-size: 32px;
   font-family: 'Nanum Brush Script', sans-serif;
   text-align: center;
+}
+
+/* underlines */
+.linksvg {
+    position: relative;
+}
+
+.linksvg svg path {
+  stroke-dashoffset: 1000px;
+  stroke-dasharray: 1000px;
+  transition: stroke-dashoffset 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.linksvg:hover svg path {
+  stroke-dashoffset: 0;
 }
