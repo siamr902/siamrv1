@@ -17,7 +17,7 @@ module.exports = {
         "ceviche": ['Ceviche One']
       },
       boxShadow: {
-        "dim": "rgba(0, 0, 0, 0.18) 0px 2px 4px 0px, rgba(0, 0, 0, 0.5) 0px 2px 16px 0px;"
+        "dim": "rgba(0, 0, 0, 0.18) 0px 2px 4px 0px, rgba(0, 0, 0, 0.5) 0px 2px 16px 0px"
       }
     },
   },
