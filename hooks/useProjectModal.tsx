@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { useModal } from "../contexts/ModalContext";
 
 export const useProjectModal = () => {
-  const modalRef = useRef<HTMLDivElement | null>(null);
+  const modalRef = useRef<HTMLDivElement>(null);
   const { closeModal, projectRef } = useModal();
 
   useEffect(() => {

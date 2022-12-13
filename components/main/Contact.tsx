@@ -36,7 +36,7 @@ const Contact = () => {
         >
           Have questions or feedback?
         </motion.div>
-        <div className="flex flex-col space-y-4 items-center">
+        <div className="hidden sm:flex flex-col space-y-4 items-center">
           <motion.div
             className="flex space-x-4 items-center"
             initial={{ opacity: 0, x: 150 }}
