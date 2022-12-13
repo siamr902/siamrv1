@@ -93,7 +93,7 @@ const ContactForm = () => {
         placeholder="Email"
         {...register("email", {
           required: true,
-          pattern: /(?<=@gmail)\.(?=com)/g,
+          pattern: /.*(@gmail)\.(?=com)/g,
         })}
       />
       <textarea
