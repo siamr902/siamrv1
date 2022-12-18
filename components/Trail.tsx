@@ -1,0 +1,26 @@
+import { motion, Variants } from "framer-motion";
+import { useTrail } from "../hooks/useTrail";
+
+const Trail = () => {
+  const { trailPosition } = useTrail();
+  return (
+    <>
+      {Array.from({ length: 4 }, (_, i) => (
+        <motion.div
+          key={i}
+          className="trail dark:bg-sky-300 bg-red-500"
+          animate={{
+            x: trailPosition.x - 6,
+            y: trailPosition.y - 6,
+            transition: {
+                type: "spring",
+                mass: 0.6,
+            }
+          }}
+        ></motion.div>
+      ))}
+    </>
+  );
+};
+
+export default Trail;

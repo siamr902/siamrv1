@@ -57,7 +57,7 @@ const Contact = () => {
             transition={{ duration: 3 }}
           >
             <div className="text-3xl md:text-4xl font-brush">
-              siamrbiz@gmail.com
+              siamr902@gmail.com
             </div>
             <FiMail className="h-[5vw] w-[5vw] md:h-10 md:w-10 dark:text-[#c471ed] text-[#240b36]" />
           </motion.div>

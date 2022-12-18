@@ -103,7 +103,7 @@ const ContactForm = () => {
       />
       <button
         type="submit"
-        className="p-4 text-gray-500 dark:text-gray-400 font-brush text-3xl sm:text-4xl shadow-dim dark:bg-[#272727] bg-zinc-100 active:scale-95 transiton duration-200 ease-out"
+        className="p-4 text-gray-500 dark:text-gray-400 font-brush text-3xl sm:text-4xl shadow-dim dark:bg-[#272727] bg-zinc-100 active:scale-y-90 transiton duration-200 ease-out"
       >
         SEND
       </button>

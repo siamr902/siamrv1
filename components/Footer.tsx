@@ -3,7 +3,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <footer className="w-full p-16 flex flex-col space-y-4 sm:flex-row sm:justify-between space-x-5 items-center shadow-lg bg-zinc-50 dark:bg-[#222] shadow-black dark:shadow-gray-200">
+    <footer className="w-full p-16 flex flex-col space-y-4 sm:flex-row sm:justify-between space-x-5 items-center shadow-lg bg-zinc-100 dark:bg-[#222] shadow-black dark:shadow-gray-200">
       <motion.div
         className="hidden sm:flex items-center space-x-3 text-4xl font-brush"
         initial={{ opacity: 0, x: -10 }}

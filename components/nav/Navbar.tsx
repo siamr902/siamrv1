@@ -1,7 +1,7 @@
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
-import React, { useEffect, useRef, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { useModal } from "../../contexts/ModalContext";
 import { useSidebar } from "../../hooks/useSidebar";
 import { useScrollVertical } from "../../hooks/useScrollVertical";
@@ -22,6 +22,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const theme = darkMode ? "dark" : "light";
+
     setTheme(theme);
   }, [darkMode, setTheme]);
 
@@ -57,6 +58,7 @@ const Navbar = () => {
               key={letter}
               variants={child}
               transition={{ duration: 2 }}
+              className="inline-flex"
             >
               {letter}
             </motion.span>

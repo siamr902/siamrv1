@@ -2,17 +2,44 @@ import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { GiTopHat } from "react-icons/gi";
 
+const firstIntroWord = ["W", "E", "L", "C", "O", "M", "E", ","];
+
+const secondIntroWord = ["I", "'", "M"];
+
 const Hero = () => {
   const [clicked, setClicked] = useState<boolean>(false);
   return (
     <motion.div className="w-full min-h-[70vh] flex flex-col space-y-10 p-6 items-center justify-start relative">
       <motion.div
-        className="font-brush text-6xl md:text-7xl lg:text-8xl relative text-center"
-        initial={{ opacity: 0, y: -200 }}
-        animate={{ opacity: 1, y: 0 }}
+        className="font-brush text-6xl md:text-7xl lg:text-8xl relative text-center select-none"
+        initial={{ opacity: 0, y: -200, x: -100 }}
+        animate={{ opacity: 1, y: 0, x: 0 }}
         transition={{ duration: 2, delay: 6 }}
       >
-        <span className="relative">WELCOME, I&apos;M </span>
+        {firstIntroWord.map((letter) => (
+          <motion.span
+            key={letter}
+            className="relative inline-flex hover:text-[#c31432] dark:hover:text-[#12c2e9] hover:font-semibold"
+            whileHover={{ scaleX: [1, 0.9, 1], scaleY: [1, 1.5, 1, 1.2, 1] }}
+            whileTap={{ scaleY: 1.1 }}
+            transition={{ ease: [0.17, 0.23, 0.63, 0.87] }}
+          >
+            {letter}
+          </motion.span>
+        ))}
+        &nbsp;
+        {secondIntroWord.map((letter) => (
+          <motion.span
+            key={letter}
+            className="relative inline-flex hover:text-[#c31432] dark:hover:text-[#12c2e9] hover:font-semibold"
+            whileHover={{ scaleX: [1, 0.9, 1], scaleY: [1, 1.5, 1, 1.2, 1] }}
+            whileTap={{ scaleY: 1.1 }}
+            transition={{ ease: [0.17, 0.23, 0.63, 0.87] }}
+          >
+            {letter}
+          </motion.span>
+        ))}
+        &nbsp;
         <span className="tracking-wider bg-clip-text text-transparent font-semibold bg-gradient-to-r dark:from-[#12c2e9] dark:to-[#c471ed] from-[#c31432] to-[#240b36]">
           SI
           <span
@@ -35,17 +62,17 @@ const Hero = () => {
         </AnimatePresence>
       </motion.div>
       <motion.p
-        initial={{ opacity: 0, y: 200 }}
-        animate={{ opacity: 1, y: 0 }}
+        initial={{ opacity: 0, y: 200, x: 100 }}
+        animate={{ opacity: 1, y: 0, x: 0 }}
         transition={{ duration: 2, delay: 6 }}
-        className="max-w-[75%] tracking-wider text-center text-3xl sm:text-4xl md:text-[44px] font-brush -z-10"
+        className="max-w-[75%] tracking-wider text-center text-[32px] sm:text-4xl md:text-[44px] font-brush -z-10"
         style={{ lineHeight: "60px" }}
       >
-        A <span className="text-[#c31432] dark:text-sky-300">developer</span>{" "}
+        A <span className="text-[#c31432] dark:text-purple-300">developer</span>{" "}
         training to enhance his skill sets and seek greater depths of
         understanding of modern frameworks and technologies. Current areas of
         interest include
-        <span className="dark:text-red-300 text-red-500"> web</span>{" "}
+        <span className="dark:text-fuchsia-300 text-red-500"> web</span>{" "}
         development, database design, and competitive programming.
       </motion.p>
     </motion.div>

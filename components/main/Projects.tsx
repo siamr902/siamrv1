@@ -110,11 +110,11 @@ const Projects = () => {
           <MdNavigateBefore className="dark:text-white group-hover:scale-105 group-active:scale-100 transition duration-200 ease-in-out" />
         </div>
       </motion.div>
-      <div className="flex space-x-4 items-center">
+      <div className="flex gap-4 items-center flex-wrap">
         {Array.from({ length: projects.length }, (_, i) => (
           <div
             key={projects[i].name}
-            className={`w-3 h-3 sm:w-5 sm:h-5 dark:bg-white bg-black rounded-full cursor-pointer ${
+            className={`w-3 h-3 sm:w-4 sm:h-4 dark:bg-white bg-gray-400 rounded-full cursor-pointer ${
               currentProjectIndex === i && "bg-[#c5094e] dark:bg-[#66c4c2]"
             }`}
             onClick={() => {

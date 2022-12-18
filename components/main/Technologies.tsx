@@ -35,7 +35,7 @@ const Technologies = () => {
         Techs
       </motion.div>
       <motion.div
-        className="grid grid-cols-2 sm:grid-cols-4 place-items-center gap-[12vw] sm:gap-14 md:gap-16 lg:gap-x-[7.5rem] lg:gap-y-24 px-8 py-4  justify-center items-center"
+        className="grid grid-cols-2 sm:grid-cols-4 place-items-center gap-x-[22vw] gap-y-[14vw] sm:gap-14 md:gap-16 lg:gap-x-[7.5rem] lg:gap-y-24 px-8 py-4  justify-center items-center"
         variants={variants}
         initial="start"
         whileInView="show"

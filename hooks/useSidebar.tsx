@@ -3,8 +3,8 @@ import { useEffect, useRef, useState } from "react";
 export const useSidebar = () => {
   const [mounted, setMounted] = useState<boolean>(false);
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
-  const menuRef = useRef<HTMLDivElement | null>(null);
-  const hamburgerRef = useRef<HTMLDivElement | null>(null);
+  const menuRef = useRef<HTMLDivElement>(null);
+  const hamburgerRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const handleClose = (e: Event) => {

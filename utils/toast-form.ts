@@ -51,6 +51,6 @@ export const successToast = () => {
         autoClose: 2000,
         pauseOnFocusLoss: false,
         hideProgressBar: true,
-        bodyClassName: "toast-fontLarge"
+        bodyClassName: "toast-fontLarge",
     })
 }

@@ -3,6 +3,7 @@ import Head from "next/head";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Navbar, Footer, Content } from "../components";
+import Trail from "../components/Trail";
 import { ModalContextProvider } from "../contexts/ModalContext";
 
 const Home: NextPage = () => {
@@ -14,6 +15,7 @@ const Home: NextPage = () => {
           <link rel="shortcut icons" href="" />
         </Head>
         <ToastContainer />
+        <Trail />
         <Navbar />
         <Content />
         <Footer />
