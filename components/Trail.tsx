@@ -1,8 +1,8 @@
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 import { useTrail } from "../hooks/useTrail";
 
 const Trail = () => {
-  const { trailPosition } = useTrail();
+  const { trailPosition, click } = useTrail();
   return (
     <>
       {Array.from({ length: 4 }, (_, i) => (
@@ -12,6 +12,7 @@ const Trail = () => {
           animate={{
             x: trailPosition.x - 6,
             y: trailPosition.y - 6,
+            scale: click ? 3 : 1,
             transition: {
                 type: "spring",
                 mass: 0.6,

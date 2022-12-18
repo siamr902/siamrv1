@@ -98,14 +98,14 @@ const Projects = () => {
           </motion.div>
         </AnimatePresence>
         <div
-          className="absolute group top-1/2 right-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-white shadow-lg shadow-gray-500 dark:shadow-black rounded-full cursor-pointer hover:scale-105 transition duration-200 ease-in-out active:scale-100"
+          className="absolute group top-1/2 z-[110] right-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-white shadow-lg shadow-gray-500 dark:shadow-black rounded-full cursor-pointer hover:scale-105 transition duration-200 ease-in-out active:scale-100"
           onClick={() => navigateNext()}
         >
           <MdNavigateNext className="dark:text-white group-hover:scale-105 group-active:scale-100 transition duration-200 ease-in-out" />
         </div>
         <div
           onClick={() => navigatePrevious()}
-          className="absolute group top-1/2 left-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-white shadow-lg shadow-gray-500 dark:shadow-black rounded-full cursor-pointer hover:scale-105 transition duration-200 ease-in-out active:scale-100"
+          className="absolute group top-1/2 left-0 z-[110] text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-white shadow-lg shadow-gray-500 dark:shadow-black rounded-full cursor-pointer hover:scale-105 transition duration-200 ease-in-out active:scale-100"
         >
           <MdNavigateBefore className="dark:text-white group-hover:scale-105 group-active:scale-100 transition duration-200 ease-in-out" />
         </div>

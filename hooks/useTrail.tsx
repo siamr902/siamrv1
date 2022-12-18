@@ -10,6 +10,7 @@ export const useTrail = () => {
     x: 0,
     y: 0,
   });
+  const [click, setClick] = useState<boolean>(false);
 
   useEffect(() => {
     const track = (e: MouseEvent) => {
@@ -17,10 +18,20 @@ export const useTrail = () => {
     };
     window.addEventListener("mousemove", track);
 
-    return () => window.removeEventListener("mousemove", track);
+    const handleClick = () => {
+        setClick(true);
+        setTimeout(() => setClick(false), 100);
+    }
+    window.addEventListener("click", handleClick);
+
+    return () => {
+      window.removeEventListener("mousemove", track);
+      window.removeEventListener("click", handleClick)
+    };
   }, []);
 
   return {
     trailPosition,
-  }
+    click
+  };
 };
