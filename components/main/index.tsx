@@ -9,7 +9,9 @@ const Content = () => {
     <>
       <main className="mt-20 pb-14">
         <Hero />
-        <Technologies />
+        <section id="techs">
+          <Technologies />
+        </section>
         <section id="projects">
           <Projects />
         </section>

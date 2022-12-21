@@ -24,7 +24,6 @@ const Technologies = () => {
       viewport={{ once: true }}
       transition={{ duration: 2 }}
       className="min-h-[80vh] flex flex-col space-y-5 sm:space-y-20 items-center justify-center p-8 mt-10 sm:mt-5"
-      id="techs"
     >
       <motion.div
         className={`section-title ${theme === "light" ? "darkbolts" : ""}`}

@@ -1,6 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { GiTopHat } from "react-icons/gi";
+import OrbCanvas from "./three/OrbCanvas";
 
 const firstIntroWord = ["W", "E", "L", "C", "O", "M", "E", ","];
 
@@ -11,7 +12,7 @@ const Hero = () => {
   return (
     <motion.div className="w-full min-h-[70vh] flex flex-col space-y-10 p-6 items-center justify-start relative">
       <motion.div
-        className="font-brush text-6xl md:text-7xl lg:text-8xl relative text-center select-none"
+        className="font-brush text-6xl md:text-7xl lg:text-8xl relative text-center select-none z-10"
         initial={{ opacity: 0, y: -200, x: -100 }}
         animate={{ opacity: 1, y: 0, x: 0 }}
         transition={{ duration: 2, delay: 6 }}
@@ -32,7 +33,7 @@ const Hero = () => {
           <motion.span
             key={letter}
             className="relative inline-flex hover:text-[#c31432] dark:hover:text-[#12c2e9] hover:font-semibold"
-            whileHover={{ scaleX: [1, 0.9, 1], scaleY: [1, 1.5, 1, 1.2, 1] }}
+            whileHover={{ scaleX: [1, 1.1, 1], scaleY: [1, 1.5, 1, 1.2, 1] }}
             whileTap={{ scaleY: 1.1 }}
             transition={{ ease: [0.17, 0.23, 0.63, 0.87] }}
           >
@@ -65,16 +66,17 @@ const Hero = () => {
         initial={{ opacity: 0, y: 200, x: 100 }}
         animate={{ opacity: 1, y: 0, x: 0 }}
         transition={{ duration: 2, delay: 6 }}
-        className="max-w-[75%] tracking-wider text-center text-[32px] sm:text-4xl md:text-[44px] font-brush -z-10"
+        className="max-w-[75%] tracking-wider text-center text-[32px] sm:text-4xl md:text-[44px] font-brush z-10 select-none"
         style={{ lineHeight: "60px" }}
       >
         A <span className="text-[#c31432] dark:text-purple-300">developer</span>{" "}
         training to enhance his skill sets and seek greater depths of
-        understanding of modern frameworks and technologies. Current areas of
-        interest include
+        understanding of modern frameworks and technologies. Current activities
+        include
         <span className="dark:text-fuchsia-300 text-red-500"> web</span>{" "}
-        development, database design, and competitive programming.
+        development, UX design, and competitive programming.
       </motion.p>
+      <OrbCanvas />
     </motion.div>
   );
 };
