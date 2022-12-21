@@ -39,7 +39,7 @@ const Contact = () => {
         <div className="hidden sm:flex flex-col space-y-4 items-center">
           <motion.div
             className="flex space-x-4 items-center"
-            initial={{ opacity: 0, x: 150 }}
+            initial={{ opacity: 0, x: -150 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 3 }}
@@ -51,7 +51,7 @@ const Contact = () => {
           </motion.div>
           <motion.div
             className="flex space-x-4 items-center sm:pl-[10vw]"
-            initial={{ opacity: 0, x: 200 }}
+            initial={{ opacity: 0, x: -200 }}
             whileInView={{ opacity: 1, x: 0 }}
             viewport={{ once: true }}
             transition={{ duration: 3 }}
