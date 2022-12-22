@@ -32,7 +32,7 @@ const Navbar = () => {
     <>
       <motion.nav
         className={`w-full flex items-center justify-between py-5 px-6 lg:px-10 bg-transparent nav-blur ${
-          scrollUp && !showModal ? "sticky top-0 z-[175]" : "static"
+          scrollUp && !showModal ? "sticky top-0 z-[150]" : "static"
         }`}
         initial={{ opacity: 0, y: 10 }}
         whileInView={{ opacity: 1, y: 0 }}

@@ -7,12 +7,12 @@ const Footer = () => {
       <motion.div
         className="hidden sm:flex items-center space-x-3 text-4xl font-brush"
         initial={{ opacity: 0, x: -10 }}
-        whileInView={{ opacity: 0.6, x: 0 }}
+        whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 1 }}
       >
-        <div className="text-2xl">&copy;</div>
-        <div>2022 - now</div>
+        <div className="text-2xl opacity-90 dark:opacity-60">&copy;</div>
+        <div className="opacity-90 dark:opacity-60">2022 - now</div>
       </motion.div>
       <div className="flex flex-col space-y-3">
         <motion.div

@@ -38,7 +38,7 @@ const ProjectModal = ({ demo, description, name, repository, tech }: Props) => {
             whileTap={{ scale: 1.1 }}
             className="hover:text-sky-600 dark:hover:text-sky-400 transition duration-200 ease-out"
           >
-            LIVE
+            VIEW
           </motion.button>
         </a>
         <a href={repository} target="_blank" rel="noopener noreferrer">

@@ -35,7 +35,7 @@ const NavigationInfo = () => {
 
   return (
     <motion.div
-      className="fixed top-0 left-0 w-[50%] sm:w-[40%] md:w-[33%] lg:w-[27%] min-h-screen z-[120] flex flex-col items-center justify-evenly p-4 shadow-lg shadow-[#333] dark:shadow-black dark:bg-[#222] bg-[#ececec] transition text-center"
+      className="fixed top-0 left-0 w-[50%] sm:w-[40%] md:w-[33%] lg:w-[27%] min-h-screen z-[160] flex flex-col items-center justify-evenly p-4 shadow-lg shadow-[#333] dark:shadow-black dark:bg-[#222] bg-[#ececec] transition text-center"
       variants={variants}
       initial="start"
       animate="show"

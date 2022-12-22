@@ -16,6 +16,7 @@ const Trail = () => {
             transition: {
                 type: "spring",
                 mass: 0.6,
+                damping: 7,
             }
           }}
         ></motion.div>
