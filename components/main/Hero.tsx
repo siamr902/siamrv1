@@ -20,7 +20,7 @@ const Hero = () => {
         {firstIntroWord.map((letter) => (
           <motion.span
             key={letter}
-            className="relative inline-flex hover:text-[#c31432] dark:hover:text-[#12c2e9] hover:font-semibold"
+            className="relative inline-flex hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:from-[#c31432] hover:to-[#240b36] dark:hover:from-[#12c2e9] dark:hover:to-[#c471ed] hover:font-semibold"
             whileHover={{ scaleX: [1, 0.9, 1], scaleY: [1, 1.5, 1, 1.2, 1] }}
             whileTap={{ scaleY: 1.1 }}
             transition={{ ease: [0.17, 0.23, 0.63, 0.87] }}
@@ -32,7 +32,7 @@ const Hero = () => {
         {secondIntroWord.map((letter) => (
           <motion.span
             key={letter}
-            className="relative inline-flex hover:text-[#c31432] dark:hover:text-[#12c2e9] hover:font-semibold"
+            className="relative inline-flex hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:from-[#c31432] hover:to-[#240b36] dark:hover:from-[#12c2e9] dark:hover:to-[#c471ed] hover:font-semibold"
             whileHover={{ scaleX: [1, 1.1, 1], scaleY: [1, 1.5, 1, 1.2, 1] }}
             whileTap={{ scaleY: 1.1 }}
             transition={{ ease: [0.17, 0.23, 0.63, 0.87] }}
