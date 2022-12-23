@@ -9,6 +9,7 @@ interface ProjectProps {
   demo: string;
   repository: string;
   projectLogo: StaticImageData | string;
+  bubbleText: string;
 }
 
 export const projects: ProjectProps[] = [
@@ -27,7 +28,8 @@ export const projects: ProjectProps[] = [
     ],
     demo: "https://crunch-tracker.vercel.app/",
     repository: "https://github.com/siamr902/crunch-tracker",
-    projectLogo: crunchLogo
+    projectLogo: crunchLogo,
+    bubbleText: "FITNESS"
   },
   {
     name: "Visualizer Collection",
@@ -36,7 +38,8 @@ export const projects: ProjectProps[] = [
     tech: ["typescript", "nextjs", "tailwindcss"],
     demo: "https://visualizer-collection.vercel.app/",
     repository: "https://github.com/siamr902/algorithms-app",
-    projectLogo: visualizerLogo
+    projectLogo: visualizerLogo,
+    bubbleText: "ALGORITHMS"
   },
   {
     name: "SRBLOGS",
@@ -45,6 +48,7 @@ export const projects: ProjectProps[] = [
     tech: ["nextjs", "mdx", "tailwindcss", "typescript", "framer-motion"],
     demo: "https://srblog.vercel.app/",
     repository: "https://github.com/siamr902/srblogs",
-    projectLogo: "SRBLOGS"
+    projectLogo: "SRBLOGS",
+    bubbleText: "ARTICLES"
   },
 ];

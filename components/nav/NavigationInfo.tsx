@@ -2,6 +2,7 @@ import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import React, { ReactNode } from "react";
 import { menuItems } from "../../data/menu-items";
+import { useScrollVertical } from "../../hooks/useScrollVertical";
 import { childOpacity as child } from "../../utils/animation-children";
 
 const variants: Variants = {
@@ -17,6 +18,8 @@ const variants: Variants = {
 };
 
 const NavigationInfo = () => {
+  const { scrollVertical } = useScrollVertical();
+  console.log(scrollVertical)
   const generateSvg = (width: number): ReactNode => {
     return (
       <svg width={width} height="35" xmlns="http://www.w3.org/2000/svg">
@@ -42,7 +45,12 @@ const NavigationInfo = () => {
     >
       {menuItems.map((menuItem) =>
         menuItem.name === "Blog" ? (
-          <a href={menuItem.href} key={menuItem.name} target="_blank" rel="noopener noreferrer">
+          <a
+            href={menuItem.href}
+            key={menuItem.name}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.div
               variants={child}
               transition={{ duration: 1 }}

@@ -286,7 +286,7 @@ const TechIcons = () => {
         drag
         viewBox="0 0 128 128"
         className="technology cursor-grab"
-        variants={childDown}
+        variants={childOpacity}
         whileDrag={{ scale: 1.75 }}
         dragConstraints={{ right: 200, bottom: 400 }}
         dragSnapToOrigin

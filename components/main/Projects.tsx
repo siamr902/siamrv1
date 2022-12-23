@@ -97,20 +97,20 @@ const Projects = () => {
             }
           </motion.div>
         </AnimatePresence>
-        <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 -z-20 font-serif tracking-wider dark:text-[#222] text-zinc-50 text-[10vw] dark:[-webkit-text-stroke:4px_#1f1f1f] [-webkit-text-stroke:4px_#f5f4f4]">
-          PROJECTS
+        <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 -z-20 font-bubble tracking-wider dark:text-[#222] text-zinc-50 text-[11vw] dark:[-webkit-text-stroke:4px_#1f1f1f] [-webkit-text-stroke:3px_#ececec]">
+          {projects[currentProjectIndex].bubbleText || "PROJECTS"}
         </div>
         <div
-          className="absolute group top-1/2 z-[110] right-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-white shadow-lg shadow-gray-500 dark:shadow-black rounded-full cursor-pointer hover:scale-105 transition duration-200 ease-in-out active:scale-100"
+          className="absolute group top-1/2 z-[110] right-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-white shadow-lg shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer hover:scale-105 transition duration-200 ease-in-out active:scale-100"
           onClick={() => navigateNext()}
         >
-          <MdNavigateNext className="dark:text-white group-hover:scale-105 group-active:scale-100 transition duration-200 ease-in-out" />
+          <MdNavigateNext className="dark:text-[#888] text-[#555] group-hover:scale-105 group-active:scale-100 transition duration-200 ease-in-out" />
         </div>
         <div
           onClick={() => navigatePrevious()}
-          className="absolute group top-1/2 left-0 z-[110] text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-white shadow-lg shadow-gray-500 dark:shadow-black rounded-full cursor-pointer hover:scale-105 transition duration-200 ease-in-out active:scale-100"
+          className="absolute group top-1/2 left-0 z-[110] text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-white shadow-lg shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer hover:scale-105 transition duration-200 ease-in-out active:scale-100"
         >
-          <MdNavigateBefore className="dark:text-white group-hover:scale-105 group-active:scale-100 transition duration-200 ease-in-out" />
+          <MdNavigateBefore className="dark:text-[#888] text-[#555] group-hover:scale-105 group-active:scale-100 transition duration-200 ease-in-out" />
         </div>
       </motion.div>
       <div className="flex gap-4 items-center flex-wrap">

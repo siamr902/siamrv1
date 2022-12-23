@@ -17,9 +17,9 @@ const Hero = () => {
         animate={{ opacity: 1, y: 0, x: 0 }}
         transition={{ duration: 2, delay: 6 }}
       >
-        {firstIntroWord.map((letter) => (
+        {firstIntroWord.map((letter, idx) => (
           <motion.span
-            key={letter}
+            key={letter + idx}
             className="relative inline-flex hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:from-[#c31432] hover:to-[#240b36] dark:hover:from-[#12c2e9] dark:hover:to-[#c471ed] hover:font-semibold"
             whileHover={{ scaleX: [1, 0.9, 1], scaleY: [1, 1.5, 1, 1.2, 1] }}
             whileTap={{ scaleY: 1.1 }}
