@@ -39,7 +39,7 @@ const Projects = () => {
   const [currentProjectIndex, setCurrentProjectIndex] = useState<number>(0);
   const [animateDirection, setAnimateDirection] = useState<number>(0);
 
-  const {closeModal} = useModal();
+  const { closeModal } = useModal();
 
   const navigateNext = () => {
     setAnimateDirection(1);
@@ -92,11 +92,14 @@ const Projects = () => {
           >
             {
               projects.map((project) => (
-                <Project {...project} key={project.name}/>
+                <Project {...project} key={project.name} />
               ))[currentProjectIndex]
             }
           </motion.div>
         </AnimatePresence>
+        <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 -z-20 font-serif tracking-wider dark:text-[#222] text-zinc-50 text-[10vw] dark:[-webkit-text-stroke:4px_#1f1f1f] [-webkit-text-stroke:4px_#f5f4f4]">
+          PROJECTS
+        </div>
         <div
           className="absolute group top-1/2 z-[110] right-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-white shadow-lg shadow-gray-500 dark:shadow-black rounded-full cursor-pointer hover:scale-105 transition duration-200 ease-in-out active:scale-100"
           onClick={() => navigateNext()}
@@ -118,7 +121,7 @@ const Projects = () => {
               currentProjectIndex === i && "bg-[#df3674] dark:bg-[#c471ed]"
             }`}
             onClick={() => {
-              setAnimateDirection(i > currentProjectIndex ? 1 : -1)
+              setAnimateDirection(i > currentProjectIndex ? 1 : -1);
               setCurrentProjectIndex(i);
             }}
           ></div>

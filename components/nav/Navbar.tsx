@@ -16,7 +16,7 @@ const Navbar = () => {
   const { push } = useRouter();
   const { showModal } = useModal();
 
-  const { scrollUp } = useScrollVertical();
+  const { scrollUp, scrollVertical } = useScrollVertical();
   const { hamburgerRef, menuOpen, menuRef, mounted, setMenuOpen } =
     useSidebar();
 
@@ -31,12 +31,9 @@ const Navbar = () => {
   return (
     <>
       <motion.nav
-        className={`w-full flex items-center justify-between py-5 px-6 lg:px-10 bg-transparent nav-blur ${
-          scrollUp && !showModal ? "sticky top-0 z-[150]" : "static"
+        className={`w-full flex items-center justify-between py-5 px-6 lg:px-10 bg-transparent nav-blur z-[150] sticky top-0 transition-transform duration-500 ease-out ${
+          (scrollUp && !showModal) || scrollVertical < 70 ? "translate-y-0" : "-translate-y-full"
         }`}
-        initial={{ opacity: 0, y: 10 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.5, ease: "easeInOut" }}
       >
         <motion.div
           className="text-6xl sm:text-7xl font-brush font-semibold cursor-pointer select-none"

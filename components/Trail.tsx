@@ -8,7 +8,7 @@ const Trail = () => {
       {Array.from({ length: 4 }, (_, i) => (
         <motion.div
           key={i}
-          className="trail dark:bg-sky-300 bg-red-500"
+          className="trail hidden sm:inline-flex dark:bg-sky-300 bg-red-500"
           animate={{
             x: trailPosition.x - 6,
             y: trailPosition.y - 6,

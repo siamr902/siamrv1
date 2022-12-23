@@ -8,7 +8,9 @@ const Content = () => {
   return (
     <>
       <main className="mt-20 pb-14">
-        <Hero />
+        <section id="hero">
+          <Hero />
+        </section>
         <section id="techs">
           <Technologies />
         </section>

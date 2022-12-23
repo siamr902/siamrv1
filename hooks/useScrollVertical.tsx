@@ -19,5 +19,5 @@ export const useScrollVertical = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, [scrollVertical, setScrollVertical]);
 
-  return { scrollUp };
+  return { scrollUp, scrollVertical };
 };
