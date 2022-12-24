@@ -23,7 +23,7 @@ const Technologies = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 2 }}
-      className="min-h-[80vh] flex flex-col space-y-5 sm:space-y-20 items-center justify-center p-8 mt-10 md:mt-20"
+      className="relative min-h-[80vh] flex flex-col space-y-5 sm:space-y-20 items-center justify-center p-8 mt-10 md:mt-20"
     >
       <motion.div
         className={`section-title ${theme === "light" ? "darkbolts" : ""}`}

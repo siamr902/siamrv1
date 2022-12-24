@@ -38,6 +38,9 @@
   .contact-form {
     @apply outline-none p-4 h-[70px] font-brush text-center shadow-dim dark:bg-[#272727] bg-zinc-100 text-3xl sm:text-4xl
   }
+  .bubble-display {
+    @apply font-bubble tracking-wider dark:text-[#222] text-zinc-50 text-[11vw] dark:[-webkit-text-stroke:5px_#1f1f1f] [-webkit-text-stroke:5px_#ececec]
+  }
 }
 
 .nav-blur {

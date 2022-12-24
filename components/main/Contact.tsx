@@ -16,7 +16,7 @@ const Contact = () => {
       transition={{ duration: 2 }}
       className="min-h-[80vh] flex flex-col space-y-16 lg:space-x-8 p-8 lg:flex-row lg:justify-between items-center mt-10 md:mt-20"
     >
-      <div className="flex flex-col space-y-16 items-center lg:items-start justify-center">
+      <div className="relative flex flex-col space-y-16 items-center lg:items-start justify-center">
         <motion.div
           className={`section-title lg:text-7xl ${
             theme === "light" ? "darkbolts" : ""
@@ -61,6 +61,12 @@ const Contact = () => {
             </div>
             <FiMail className="h-[5vw] w-[5vw] md:h-10 md:w-10 dark:text-[#c471ed] text-[#240b36]" />
           </motion.div>
+        </div>
+        <div className="bubble-display absolute top-4 right-0 translate-y-[20%] translate-x-[3%] -z-20">
+          SUP
+        </div>
+        <div className="bubble-display absolute bottom-4 left-2 translate-y-[60%] -z-20">
+          HMU
         </div>
       </div>
       <ContactForm />

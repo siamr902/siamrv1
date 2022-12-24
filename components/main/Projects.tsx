@@ -97,7 +97,7 @@ const Projects = () => {
             }
           </motion.div>
         </AnimatePresence>
-        <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 -z-20 font-bubble tracking-wider dark:text-[#222] text-zinc-50 text-[11vw] dark:[-webkit-text-stroke:4px_#1f1f1f] [-webkit-text-stroke:3px_#ececec]">
+        <div className="absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 -z-20 bubble-display">
           {projects[currentProjectIndex].bubbleText || "PROJECTS"}
         </div>
         <div
