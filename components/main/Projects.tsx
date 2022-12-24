@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { projects } from "../../data/projects";
 import Project from "./Project";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
+import { TiChevronRight } from "react-icons/ti";
 import { useModal } from "../../contexts/ModalContext";
 
 const variants: Variants = {
@@ -101,16 +102,16 @@ const Projects = () => {
           {projects[currentProjectIndex].bubbleText || "PROJECTS"}
         </div>
         <div
-          className="absolute group top-1/2 z-[110] right-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-white shadow-lg shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer hover:scale-105 transition duration-200 ease-in-out active:scale-100"
+          className="absolute group top-1/2 z-[110] right-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-100 shadow-lg shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer hover:scale-105 transition duration-200 ease-in-out active:scale-100"
           onClick={() => navigateNext()}
         >
-          <MdNavigateNext className="dark:text-[#888] text-[#555] group-hover:scale-105 group-active:scale-100 transition duration-200 ease-in-out" />
+          <MdNavigateNext className="dark:text-[#888] text-gray-400 group-hover:scale-105 group-active:scale-100 transition duration-200 ease-in-out" />
         </div>
         <div
           onClick={() => navigatePrevious()}
-          className="absolute group top-1/2 left-0 z-[110] text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-white shadow-lg shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer hover:scale-105 transition duration-200 ease-in-out active:scale-100"
+          className="absolute group top-1/2 left-0 z-[110] text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-100 shadow-lg shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer hover:scale-105 transition duration-200 ease-in-out active:scale-100"
         >
-          <MdNavigateBefore className="dark:text-[#888] text-[#555] group-hover:scale-105 group-active:scale-100 transition duration-200 ease-in-out" />
+          <MdNavigateBefore className="dark:text-[#888] text-gray-400 group-hover:scale-105 group-active:scale-100 transition duration-200 ease-in-out" />
         </div>
       </motion.div>
       <div className="flex gap-4 items-center flex-wrap">

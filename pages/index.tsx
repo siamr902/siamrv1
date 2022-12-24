@@ -12,7 +12,7 @@ const Home: NextPage = () => {
       <ModalContextProvider>
         <Head>
           <title>siamr</title>
-          <link rel="shortcut icon" href="siambot.ico" />
+          <link rel="shortcut icon" href="siamrbot.ico" />
         </Head>
         <ToastContainer />
         <Trail />
