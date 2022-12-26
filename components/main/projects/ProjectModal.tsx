@@ -18,7 +18,7 @@ const ProjectModal = ({ demo, description, name, repository, tech }: Props) => {
 
   return (
     <div
-      className="w-[calc(100vw-2rem)] sm:w-[75vw] lg:w-[calc(100vw-20rem)] p-5 fixed text-3xl z-[100] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center space-y-5 font-brush dark:bg-[#222] bg-slate-100 shadow-md shadow-gray-400 dark:shadow-black transition"
+      className="w-[calc(100vw-2rem)] sm:w-[75vw] lg:w-[calc(100vw-20rem)] p-5 fixed text-3xl z-[200] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center space-y-5 font-brush dark:bg-[#222] bg-slate-100 shadow-md shadow-gray-400 dark:shadow-black transition"
       ref={modalRef}
     >
       <div className="text-4xl sm:text-5xl uppercase font-semibold">{name}</div>

@@ -46,7 +46,7 @@ const Project = ({
 }: Props) => {
   const logoStyles = getLogoStyles(name);
   const { showModal, toggleModal, projectRef } = useModal();
-
+  
   return (
     <>
       <div
