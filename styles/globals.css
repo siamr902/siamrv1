@@ -96,13 +96,13 @@
 
 /* toastify */
 .toast-font {
-  font-family: 'Nanum Brush Script', sans-serif;
-  font-size: 24px;
+  font-family: serif;
+  font-size: 1rem;
 }
 
 .toast-fontLarge {
-  font-size: 32px;
-  font-family: 'Nanum Brush Script', sans-serif;
+  font-size: 18px;
+  font-family: 'serif';
   text-align: center;
 }
 

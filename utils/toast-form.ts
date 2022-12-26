@@ -44,7 +44,7 @@ export const emailPatternToast = () => {
 };
 
 export const successToast = () => {
-    toast(`SENT`, {
+    toast(`Successfully Sent`, {
         icon: "👍",
         position: "top-center",
         theme: "dark",

@@ -3,8 +3,8 @@ import React from "react";
 export const ThemeCircles = () => {
   return (
     <>
-      <div className="blur-circle dark:bg-skypurple absolute top-[20%] left-[70%]"></div>
-      <div className="blur-circle dark:bg-skyblue absolute top-[20%] left-[40%]"></div>
+      <div className="blur-circle dark:bg-skypurple bg-darkpurple absolute top-[20%] left-[70%]"></div>
+      <div className="blur-circle dark:bg-skyblue bg-darkred absolute top-[20%] left-[40%]"></div>
     </>
   );
 };

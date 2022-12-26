@@ -79,7 +79,7 @@ const Hero = () => {
         className="max-w-[75%] tracking-wider text-center text-[32px] sm:text-4xl md:text-[44px] font-brush z-10 select-none"
         style={{ lineHeight: "60px" }}
       >
-        A <span className="text-darkred dark:text-skypurple">developer</span>{" "}
+        A <span className="text-darkred dark:text-fuchsia-300">developer</span>{" "}
         training to enhance his skill sets and seek greater depths of
         understanding of modern frameworks and technologies. Current activities
         include
