@@ -39,7 +39,7 @@ export const ContactCircles = () => {
   return (
     <>
       <div className="blur-circle bg-gray-600 absolute top-1/2 left-[10%]"></div>
-      <div className="blur-circle bg-skypurple absolute top-[20%] left-[5%]"></div>
+      <div className="blur-circle bg-purple-500 absolute top-[5%] left-[5%]"></div>
     </>
   );
 };

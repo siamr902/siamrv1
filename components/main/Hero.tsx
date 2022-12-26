@@ -11,9 +11,16 @@ const secondIntroWord = ["I", "'", "M"];
 const Hero = () => {
   const [clicked, setClicked] = useState<boolean>(false);
   return (
-    <motion.div className="w-full min-h-[70vh] flex flex-col space-y-10 p-6 items-center justify-start relative">
-      <ThemeCircles />
-      <LeftSideCircles />
+    <div className="w-full min-h-[70vh] flex flex-col space-y-10 p-6 items-center justify-start relative">
+      <motion.div
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
+        viewport={{ once: true }}
+        transition={{ delay: 7, duration: 2 }}
+      >
+        <ThemeCircles />
+        <LeftSideCircles />
+      </motion.div>
       <motion.div
         className="font-brush text-6xl md:text-7xl lg:text-8xl relative text-center select-none z-10"
         initial={{ opacity: 0, y: -200, x: -100 }}
@@ -80,7 +87,7 @@ const Hero = () => {
         development, UX design, and competitive programming.
       </motion.p>
       <OrbCanvas />
-    </motion.div>
+    </div>
   );
 };
 

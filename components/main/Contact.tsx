@@ -17,7 +17,6 @@ const Contact = () => {
       transition={{ duration: 2 }}
       className="min-h-[80vh] flex flex-col space-y-16 lg:space-x-8 p-8 lg:flex-row lg:justify-between items-center mt-10 md:mt-20 relative"
     >
-      <ContactCircles />
       <div className="relative flex flex-col space-y-16 items-center lg:items-start justify-center">
         <motion.div
           className={`section-title lg:text-7xl ${
@@ -64,12 +63,20 @@ const Contact = () => {
             <FiMail className="h-[5vw] w-[5vw] md:h-10 md:w-10 dark:text-skypurple text-darkpurple" />
           </motion.div>
         </div>
-        <div className="bubble-display absolute top-4 right-0 translate-y-[20%] translate-x-[3%] -z-20">
-          SUP
-        </div>
-        <div className="bubble-display absolute bottom-4 left-2 translate-y-[60%] -z-20">
-          HMU
-        </div>
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 3 }}
+        >
+          <ContactCircles />
+          <div className="bubble-display absolute top-4 right-0 translate-y-[20%] translate-x-[3%] -z-20">
+            SUP
+          </div>
+          <div className="bubble-display absolute bottom-4 left-2 translate-y-[60%] -z-20">
+            HMU
+          </div>
+        </motion.div>
       </div>
       <ContactForm />
     </motion.div>
