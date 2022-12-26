@@ -2,7 +2,7 @@ import { StaticImageData } from "next/image";
 import crunchLogo from "../images/crunch-logo.svg";
 import visualizerLogo from "../images/algo-logo.png";
 
-interface ProjectProps {
+type ProjectProps = {
   name: string;
   description: string;
   tech: string[];

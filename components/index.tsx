@@ -1,5 +1,6 @@
-import Navbar from "./nav/Navbar";
-import Footer from "./Footer";
+import Navbar from "./navbar/Navbar";
+import Footer from "./footer/Footer";
 import Content from "./main";
+import Trail from "./Trail";
 
-export { Navbar, Footer, Content };
+export { Navbar, Footer, Content, Trail };

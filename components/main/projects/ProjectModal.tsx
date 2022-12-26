@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import React from "react";
-import { useProjectModal } from "../../hooks/useProjectModal";
+import { useProjectModal } from "../../../hooks/useProjectModal";
 import { MdOutlineClose } from "react-icons/md";
-import { useModal } from "../../contexts/ModalContext";
+import { useModal } from "../../../contexts/ModalContext";
 
 type Props = {
   name: string;

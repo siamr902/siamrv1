@@ -2,10 +2,9 @@ import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import { FiMail } from "react-icons/fi";
 import React from "react";
-
 import { BiMessageRoundedDots } from "react-icons/bi";
 import ContactForm from "./ContactForm";
-import { ContactCircles } from "./BlurCircles";
+import { ContactCircles } from "../blurs/BlurCircles";
 
 const Contact = () => {
   const { theme } = useTheme();

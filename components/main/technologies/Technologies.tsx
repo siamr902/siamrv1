@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import React from "react";
-import ThemeCircles, { TechCircles } from "./BlurCircles";
+import ThemeCircles, { TechCircles } from "../blurs/BlurCircles";
 import TechIcons from "./TechIcons";
 
 const variants = {

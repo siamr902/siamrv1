@@ -6,3 +6,11 @@
     border-radius: 50%;
     z-index: -100;
 }
+
+.footer-circle {
+    opacity: 0.5;
+    filter: blur(128px);
+    width: 22vw;
+    height: 22vw;
+    border-radius: 50%;
+}

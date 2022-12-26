@@ -1,12 +1,12 @@
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import { useTheme } from "next-themes";
 import React, { useState } from "react";
-import { projects } from "../../data/projects";
+import { projects } from "../../../data/projects";
 import Project from "./Project";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 import { TiChevronRight } from "react-icons/ti";
-import { useModal } from "../../contexts/ModalContext";
-import { ProjectCircles } from "./BlurCircles";
+import { useModal } from "../../../contexts/ModalContext";
+import { ProjectCircles } from "../blurs/BlurCircles";
 
 const variants: Variants = {
   initial: (direction) => {

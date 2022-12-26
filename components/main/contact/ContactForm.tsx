@@ -8,7 +8,7 @@ import {
   alphaToast,
   emailPatternToast,
   successToast
-} from "../../utils/toast-form";
+} from "../../../utils/toast-form";
 
 interface FormData {
   firstName: string;

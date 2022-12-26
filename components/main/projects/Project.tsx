@@ -1,8 +1,8 @@
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import { useModal } from "../../contexts/ModalContext";
-import { getLogoStyles } from "../../utils/getLogoStyles";
+import { useModal } from "../../../contexts/ModalContext";
+import { getLogoStyles } from "../../../utils/getLogoStyles";
 import ProjectModal from "./ProjectModal";
 
 type Props = {

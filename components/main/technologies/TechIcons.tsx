@@ -6,7 +6,7 @@ import {
   childLeft,
   childRight,
   childUp,
-} from "../../utils/animation-children";
+} from "../../../utils/animation-children";
 
 const TechIcons = () => {
   return (

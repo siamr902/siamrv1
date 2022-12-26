@@ -1,8 +1,8 @@
 import React from "react";
-import Contact from "./Contact";
-import Hero from "./Hero";
-import Projects from "./Projects";
-import Technologies from "./Technologies";
+import Contact from "./contact/Contact";
+import Hero from "./hero/Hero";
+import Projects from "./projects/Projects";
+import Technologies from "./technologies/Technologies";
 
 const Content = () => {
   return (

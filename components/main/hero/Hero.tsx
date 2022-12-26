@@ -1,8 +1,8 @@
 import { AnimatePresence, motion } from "framer-motion";
 import React, { useState } from "react";
 import { GiTopHat } from "react-icons/gi";
-import { ThemeCircles, LeftSideCircles } from "./BlurCircles";
-import OrbCanvas from "./three/OrbCanvas";
+import { ThemeCircles, LeftSideCircles } from "../blurs/BlurCircles";
+import OrbCanvas from "../orb/OrbCanvas";
 
 const firstIntroWord = ["W", "E", "L", "C", "O", "M", "E", ","];
 

@@ -47,8 +47,8 @@ export const ContactCircles = () => {
 export const FooterCircles = () => {
   return (
     <>
-      <div className="blur-circle absolute dark:bg-gray-700 bg-gray-300 right-[10%] top-0 z-10"></div>
-      <div className="blur-circle absolute dark:bg-gray-700 bg-gray-300 left-[5%] top-0 z-10"></div>
+      <div className="footer-circle absolute dark:bg-gray-600 bg-gray-300 right-[10%] top-0"></div>
+      <div className="footer-circle absolute dark:bg-gray-600 bg-gray-300 left-[5%] top-0"></div>
     </>
   );
 };
