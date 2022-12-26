@@ -69,10 +69,10 @@ const Contact = () => {
           transition={{ duration: 3 }}
         >
           <ContactCircles />
-          <div className="bubble-display absolute top-4 right-0 translate-y-[20%] translate-x-[3%] -z-20">
+          <div className="hidden sm:inline-flex bubble-display absolute top-4 right-0 translate-y-[20%] translate-x-[3%] -z-20">
             SUP
           </div>
-          <div className="bubble-display absolute bottom-4 left-2 translate-y-[60%] -z-20">
+          <div className="hidden sm:inline-flex bubble-display absolute bottom-4 left-2 translate-y-[60%] -z-20">
             HMU
           </div>
         </motion.div>
