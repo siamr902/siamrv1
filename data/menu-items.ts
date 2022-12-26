@@ -27,7 +27,7 @@ export const menuItems: MenuProps[] = [
   },
   {
     name: "Blog",
-    href: "https://srblog.vercel.app/",
+    href: "https://www.siamrblogs.com",
     offsetWidth: 91,
   },
 ];

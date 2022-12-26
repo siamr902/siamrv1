@@ -5,6 +5,7 @@ import React from "react";
 
 import { BiMessageRoundedDots } from "react-icons/bi";
 import ContactForm from "./ContactForm";
+import { ContactCircles } from "./BlurCircles";
 
 const Contact = () => {
   const { theme } = useTheme();
@@ -14,8 +15,9 @@ const Contact = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 2 }}
-      className="min-h-[80vh] flex flex-col space-y-16 lg:space-x-8 p-8 lg:flex-row lg:justify-between items-center mt-10 md:mt-20"
+      className="min-h-[80vh] flex flex-col space-y-16 lg:space-x-8 p-8 lg:flex-row lg:justify-between items-center mt-10 md:mt-20 relative"
     >
+      <ContactCircles />
       <div className="relative flex flex-col space-y-16 items-center lg:items-start justify-center">
         <motion.div
           className={`section-title lg:text-7xl ${
@@ -44,7 +46,7 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 3 }}
           >
-            <BiMessageRoundedDots className="h-[5vw] w-[5vw] md:h-10 md:w-10 dark:text-[#c471ed] text-[#240b36]" />
+            <BiMessageRoundedDots className="h-[5vw] w-[5vw] md:h-10 md:w-10 dark:text-skypurple text-darkpurple" />
             <div className="text-3xl md:text-4xl font-brush">
               Request # on form if preferred medium
             </div>
@@ -59,7 +61,7 @@ const Contact = () => {
             <div className="text-3xl md:text-4xl font-brush">
               siamr902@gmail.com
             </div>
-            <FiMail className="h-[5vw] w-[5vw] md:h-10 md:w-10 dark:text-[#c471ed] text-[#240b36]" />
+            <FiMail className="h-[5vw] w-[5vw] md:h-10 md:w-10 dark:text-skypurple text-darkpurple" />
           </motion.div>
         </div>
         <div className="bubble-display absolute top-4 right-0 translate-y-[20%] translate-x-[3%] -z-20">

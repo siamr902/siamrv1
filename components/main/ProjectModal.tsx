@@ -35,7 +35,7 @@ const ProjectModal = ({ demo, description, name, repository, tech }: Props) => {
       <div className="flex space-x-[20vw] items-center">
         <a href={demo} target="_blank" rel="noopener noreferrer">
           <motion.button
-            whileTap={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             className="hover:text-sky-600 dark:hover:text-sky-400 transition duration-200 ease-out"
           >
             VIEW
@@ -43,7 +43,7 @@ const ProjectModal = ({ demo, description, name, repository, tech }: Props) => {
         </a>
         <a href={repository} target="_blank" rel="noopener noreferrer">
           <motion.button
-            whileTap={{ scale: 1.1 }}
+            whileTap={{ scale: 0.9 }}
             className="hover:text-red-600 dark:hover:text-red-400 transition duration-200 ease-out"
           >
             REPO

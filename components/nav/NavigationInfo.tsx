@@ -30,7 +30,7 @@ const NavigationInfo = () => {
           fill="transparent"
           strokeWidth="3"
           strokeLinecap="round"
-          className="dark:stroke-[#c471ed] stroke-[#E30B5C]"
+          className="dark:stroke-skypurple stroke-[#E30B5C]"
         />
       </svg>
     );

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
+@import "./circle.css";
 
 
 @tailwind base;
@@ -133,4 +134,3 @@
   -webkit-filter: blur(4px);
   z-index: 180;
  }
-

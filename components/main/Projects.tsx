@@ -6,6 +6,7 @@ import Project from "./Project";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 import { TiChevronRight } from "react-icons/ti";
 import { useModal } from "../../contexts/ModalContext";
+import { ProjectCircles } from "./BlurCircles";
 
 const variants: Variants = {
   initial: (direction) => {
@@ -65,8 +66,9 @@ const Projects = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 2 }}
-      className="w-full min-h-[50vh] flex flex-col space-y-0 md:space-y-10 items-center p-8 mt-10 md:mt-20 overflow-x-hidden"
+      className="w-full min-h-[50vh] flex flex-col space-y-0 md:space-y-10 items-center p-8 mt-10 md:mt-20 overflow-visible relative"
     >
+      <ProjectCircles />
       <motion.div
         className={`section-title ${theme === "light" ? "darkbolts" : ""}`}
         whileInView={{ scale: [1, 1.2, 1] }}

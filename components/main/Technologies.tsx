@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import React from "react";
+import ThemeCircles, { TechCircles } from "./BlurCircles";
 import TechIcons from "./TechIcons";
 
 const variants = {
@@ -25,6 +26,8 @@ const Technologies = () => {
       transition={{ duration: 2 }}
       className="relative min-h-[80vh] flex flex-col space-y-5 sm:space-y-20 items-center justify-center p-8 mt-10 md:mt-20"
     >
+      <ThemeCircles />
+      <TechCircles />
       <motion.div
         className={`section-title ${theme === "light" ? "darkbolts" : ""}`}
         whileInView={{ scale: [1, 1.2, 1] }}
