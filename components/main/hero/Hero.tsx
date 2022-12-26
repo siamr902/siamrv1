@@ -23,8 +23,8 @@ const Hero = () => {
       </motion.div>
       <motion.div
         className="font-brush text-6xl md:text-7xl lg:text-8xl relative text-center select-none z-10"
-        initial={{ opacity: 0, y: -200, x: -100 }}
-        animate={{ opacity: 1, y: 0, x: 0 }}
+        initial={{ opacity: 0, x: -100 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, delay: 6 }}
       >
         {firstIntroWord.map((letter, idx) => (
@@ -73,8 +73,8 @@ const Hero = () => {
         </AnimatePresence>
       </motion.div>
       <motion.p
-        initial={{ opacity: 0, y: 200, x: 100 }}
-        animate={{ opacity: 1, y: 0, x: 0 }}
+        initial={{ opacity: 0, x: 100 }}
+        animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, delay: 6 }}
         className="max-w-[75%] tracking-wider text-center text-[32px] sm:text-4xl md:text-[44px] font-brush z-10 select-none"
         style={{ lineHeight: "60px" }}
