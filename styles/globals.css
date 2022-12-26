@@ -13,7 +13,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply min-h-screen dark:bg-[#222] bg-zinc-100 scrollbar-thin dark:scrollbar-track-[#111] dark:scrollbar-thumb-black scrollbar-track-white scrollbar-thumb-gray-300 transition ease-linear;
+    @apply min-h-screen dark:bg-[#222] bg-zinc-100 scrollbar-thin dark:scrollbar-track-[#111] dark:scrollbar-thumb-[#333] scrollbar-track-white scrollbar-thumb-gray-300 transition ease-linear;
   }
 }
 

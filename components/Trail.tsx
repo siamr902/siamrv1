@@ -1,8 +1,10 @@
 import { motion } from "framer-motion";
 import { useTrail } from "../hooks/useTrail";
 
+
 const Trail = () => {
   const { trailPosition, click } = useTrail();
+
   return (
     <>
       {Array.from({ length: 4 }, (_, i) => (

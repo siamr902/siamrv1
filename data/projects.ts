@@ -14,7 +14,7 @@ type ProjectProps = {
 
 export const projects: ProjectProps[] = [
   {
-    name: "Crunch Fitness V2",
+    name: "Crunch Fitness++",
     description: "Full-stack remodel of the crunch fitness website, inspired by my local gym. Features include user authentication using next-auth, a monthly membership payments system using stripe, a hosted postgres database on Railway to store users' workouts, and more. Prisma was used as the ideal ORM to facilitate operations and queries on the database, as well as integrate with Next-Auth. Currently, authenticated users have the ability to create, update, and delete workouts. Future additions may be to include a nutrition tracker or a system where users can track their stats (such as height, weight, bf%, etc.).",
     tech: [
       "typescript",
@@ -32,7 +32,7 @@ export const projects: ProjectProps[] = [
     bubbleText: "FITNESS"
   },
   {
-    name: "Visualizer Collection",
+    name: "Algorithms Collection",
     description:
       "A mini-collection of animated algorithms to help visualize programming concepts like backtracking, recursive dynamic programming, queues, and more. The primary intention of this project was to practice adapting certain pieces of logic into their respective code variants. Examples include a sudoku backtracking visualization with solving functionality, a visualization of Leetcode's Minimum Path Sum, a visualization of the classic N-Queens problem, etc. I may consider adding more projects to the collection in the future, but for now I find them to be somewhat repetitive: figuring out how to animate the first algorithm made the others less fulfilling. Nonetheless, designing the UI was enjoyable, and the project strengthened my understanding of Typescript.",
     tech: ["typescript", "nextjs", "tailwindcss"],

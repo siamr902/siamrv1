@@ -9,6 +9,7 @@ import {
   emailPatternToast,
   successToast
 } from "../../../utils/toast-form";
+import { FormCircles } from "../blurs/BlurCircles";
 
 interface FormData {
   firstName: string;
@@ -69,10 +70,11 @@ const ContactForm = () => {
       whileInView={{ opacity: 1 }}
       viewport={{ once: true }}
       transition={{ duration: 1 }}
-      className="flex flex-col space-y-2 w-fit"
+      className="relative flex flex-col space-y-2 w-fit"
       onSubmit={handleSubmit(onSubmit, onError)}
       ref={formRef}
     >
+      <FormCircles />
       <div className="flex space-x-2">
         <input
           type="text"

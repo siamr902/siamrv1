@@ -32,6 +32,6 @@ export const useTrail = () => {
 
   return {
     trailPosition,
-    click
+    click,
   };
 };

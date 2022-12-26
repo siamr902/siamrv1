@@ -46,7 +46,7 @@ const ProjectModal = ({ demo, description, name, repository, tech }: Props) => {
             whileTap={{ scale: 0.9 }}
             className="hover:text-red-600 dark:hover:text-red-400 transition duration-200 ease-out"
           >
-            REPO
+            SOURCE
           </motion.button>
         </a>
       </div>

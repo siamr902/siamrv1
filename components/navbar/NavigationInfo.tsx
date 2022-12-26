@@ -4,6 +4,7 @@ import React, { ReactNode } from "react";
 import { menuItems } from "../../data/menu-items";
 import { useScrollVertical } from "../../hooks/useScrollVertical";
 import { childOpacity as child } from "../../utils/animation-children";
+import { MenuCircles } from "../main/blurs/BlurCircles";
 
 const variants: Variants = {
   start: {
@@ -43,6 +44,7 @@ const NavigationInfo = () => {
       initial="start"
       animate="show"
     >
+      <MenuCircles />
       {menuItems.map((menuItem) =>
         menuItem.name === "Blog" ? (
           <a
