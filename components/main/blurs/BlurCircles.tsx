@@ -50,7 +50,7 @@ export const ContactCircles = () => {
 export const FormCircles = () => {
   return (
     <>
-      <div className="hidden sm:inline-flexstack-circle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 dark:bg-gray-500 bg-gray-300"></div>
+      <div className="hidden sm:inline-flex stack-circle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 dark:bg-gray-500 bg-gray-300"></div>
     </>
   );
 };
