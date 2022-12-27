@@ -8,7 +8,7 @@ import {
   alphaToast,
   emailPatternToast,
   successToast
-} from "../../../utils/toast-form";
+} from "../../../utils/toastForm";
 import { FormCircles } from "../blurs/BlurCircles";
 
 interface FormData {

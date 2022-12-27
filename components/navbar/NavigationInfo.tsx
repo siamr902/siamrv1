@@ -1,9 +1,9 @@
 import { motion, Variants } from "framer-motion";
 import Link from "next/link";
 import React, { ReactNode } from "react";
-import { menuItems } from "../../data/menu-items";
+import { menuItems } from "../../data/menuItems";
 import { useScrollVertical } from "../../hooks/useScrollVertical";
-import { childOpacity as child } from "../../utils/animation-children";
+import { childOpacity as child } from "../../utils/animationChildren";
 import { MenuCircles } from "../main/blurs/BlurCircles";
 
 const variants: Variants = {
