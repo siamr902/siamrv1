@@ -15,6 +15,8 @@ const Menu = ({ setMenuOpen, menuOpen }: Props) => {
         transition={{ duration: 2, delay: 4 }}
         className="flex flex-col items-center justify-center p-4 w-[80px] h-[80px] outline-none"
         onClick={() => setMenuOpen(!menuOpen)}
+        aria-label="Menu"
+        
       >
         <div className={`w-full ham-menu ${menuOpen && "open"}`}></div>
         <div

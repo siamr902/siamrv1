@@ -12,6 +12,10 @@ const Home: NextPage = () => {
         <Head>
           <title>siamr</title>
           <link rel="shortcut icon" href="siamrbot.ico" />
+          <meta
+            name="description"
+            content="Siam Rahman's portfolio site, showcasing skill sets and work across areas of web development and UI/UX design.."
+          ></meta>
         </Head>
         <ToastContainer />
         <Trail />
