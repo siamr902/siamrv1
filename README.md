@@ -2,6 +2,5 @@
   <img alt="logo" src="https://raw.githubusercontent.com/siamr902/siamrv1/master/public/siamrbot.ico" width="100"/>
 </div>
 <h1 align="center">
-  [siamrahman.com](https://siamrahman.com)
+  <a href="https://siamrahman.com" target="_blank">siamrahman.com </a>
 </h1>
-My favorite search engine is [Duck Duck Go](https://duckduckgo.com).
