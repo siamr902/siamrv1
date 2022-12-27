@@ -1,34 +1,26 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <img alt="logo" src="https://avatars.githubusercontent.com/u/97770989?v=4" width="100"/>
+</div>
+<h1 align="center">
+  <a href="https://siamrahman.com">siamrahman.com </a>
+</h1>  
+<h2>Stack</h2>  
 
-## Getting Started
+This is the first iteration of my portfolio website, and it built using `NextJS`. `Framer Motion` was used to create the animations, and `tailwindcss` was used for general-purpose styling. [React three fiber](https://docs.pmnd.rs/react-three-fiber/getting-started/introduction) helped create the floating orb in the hero section. If you're familiar with `three.js`, you'll find it easy to transition to `react-three-fiber`.  
 
-First, run the development server:
+<h2>Colors</h2>  
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+Dark Mode
+- Sky Blue `#12c2e9`
+- Purple `#c471ed`
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Light Mode
+- Dark Red `#c31432`
+- Dark Purple `#240b36`
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+<h2>Font Families</h2>  
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+- [Nanum Brush Script](https://fonts.google.com/specimen/Nanum+Brush+Script)
+- [Londrina Outline](https://fonts.google.com/specimen/Londrina+Outline)
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
