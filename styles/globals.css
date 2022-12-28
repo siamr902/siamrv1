@@ -132,5 +132,5 @@
   pointer-events: none;
   filter: blur(4px);
   -webkit-filter: blur(4px);
-  z-index: 180;
+  z-index: 250;
  }
