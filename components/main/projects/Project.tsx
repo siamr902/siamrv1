@@ -55,7 +55,9 @@ const Project = ({
         ref={projectRef}
       >
         {typeof projectLogo === "string" ? (
-          <div className={`${logoStyles} my-10`}>{name}</div>
+          <div className={`w-[40vw] h-[40vh] md:w-[300px] md:h-[300px] flex justify-center items-center`}>
+            <div className={logoStyles}>{name}</div>
+          </div>
         ) : (
           <div className="relative w-[40vw] h-[40vh] md:w-[300px] md:h-[300px]">
             <Image
