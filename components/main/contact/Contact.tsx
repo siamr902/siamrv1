@@ -10,7 +10,7 @@ const Contact = () => {
   const { theme } = useTheme();
   return (
     <motion.div
-      initial={{ opacity: 0, y: 100 }}
+      initial={{ opacity: 0, y: 75 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 2 }}
@@ -45,7 +45,7 @@ const Contact = () => {
             transition={{ duration: 3 }}
           >
             <BiMessageRoundedDots className="h-[5vw] w-[5vw] md:h-10 md:w-10 dark:text-skypurple text-darkpurple" />
-            <div className="text-3xl md:text-4xl font-brush">
+            <div className="text-3xl md:text-4xl font-brush z-10">
               Request # on form if preferred medium
             </div>
           </motion.div>
@@ -56,7 +56,7 @@ const Contact = () => {
             viewport={{ once: true }}
             transition={{ duration: 3 }}
           >
-            <div className="text-3xl md:text-4xl font-brush">
+            <div className="text-3xl md:text-4xl font-brush z-10">
               siamr902@gmail.com
             </div>
             <FiMail className="h-[5vw] w-[5vw] md:h-10 md:w-10 dark:text-skypurple text-darkpurple" />

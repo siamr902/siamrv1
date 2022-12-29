@@ -11,9 +11,11 @@ export const useTrail = () => {
     y: 0,
   });
   const [click, setClick] = useState<boolean>(false);
+  const [cursorMount, setCursorMount] = useState<boolean>(false);
 
   useEffect(() => {
     const track = (e: MouseEvent) => {
+      if (!cursorMount) setCursorMount(true);
       setTrailPosition({ x: e.clientX, y: e.clientY });
     };
     window.addEventListener("mousemove", track);
@@ -33,5 +35,6 @@ export const useTrail = () => {
   return {
     trailPosition,
     click,
+    cursorMount
   };
 };

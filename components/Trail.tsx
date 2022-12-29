@@ -3,14 +3,14 @@ import { useTrail } from "../hooks/useTrail";
 
 
 const Trail = () => {
-  const { trailPosition, click } = useTrail();
+  const { trailPosition, click, cursorMount } = useTrail();
 
   return (
     <>
       {Array.from({ length: 4 }, (_, i) => (
         <motion.div
           key={i}
-          className="trail hidden sm:inline-flex dark:bg-sky-300 bg-red-500"
+          className={`trail hidden ${cursorMount && "sm:inline-flex"} dark:bg-sky-300 bg-red-500`}
           animate={{
             x: trailPosition.x - 6,
             y: trailPosition.y - 6,

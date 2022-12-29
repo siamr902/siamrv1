@@ -40,9 +40,7 @@ export const ProjectCircles = () => {
 export const ContactCircles = () => {
   return (
     <>
-      <div className="hidden sm:inline-flex blur-circle bg-gray-600 absolute top-1/2 left-[10%]"></div>
       <div className="hidden sm:inline-flex blur-circle-xs bg-skypurple absolute top-[5%] left-[5%]"></div>
-      <div className="hidden sm:inline-flex blur-circle bg-gray-600 absolute top-[5%] left-[65%]"></div>
     </>
   );
 };
