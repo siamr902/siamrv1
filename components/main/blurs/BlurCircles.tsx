@@ -41,6 +41,7 @@ export const ContactCircles = () => {
   return (
     <>
       <div className="hidden sm:inline-flex blur-circle-xs bg-skypurple absolute top-[5%] left-[5%]"></div>
+      <div className="hidden sm:inline-flex blur-circle-xs bg-sky-300 absolute top-[5%] left-[40%]"></div>
     </>
   );
 };
