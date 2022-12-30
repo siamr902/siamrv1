@@ -21,7 +21,7 @@ const ProjectModal = ({ demo, description, name, repository, tech }: Props) => {
       className="w-[calc(100vw-2rem)] sm:w-[75vw] lg:w-[calc(100vw-20rem)] p-5 fixed text-3xl z-[200] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center space-y-5 dark:bg-[#222] bg-slate-100 shadow-md shadow-gray-400 dark:shadow-black transition"
       ref={modalRef}
     >
-      <div className="text-4xl sm:text-5xl uppercase font-brush font-semibold">{name}</div>
+      <div className="text-2xl sm:text-3xl uppercase font-headline font-semibold text-[#222222] dark:text-white">{name}</div>
       <div className="flex flex-wrap gap-2 justify-center">
         {tech.map((technology) => (
           <div key={technology} className="text-2xl font-ui lowercase p-2 opacity-70">
@@ -46,12 +46,12 @@ const ProjectModal = ({ demo, description, name, repository, tech }: Props) => {
             whileTap={{ scale: 0.9 }}
             className="hover:text-red-600 dark:hover:text-red-400 font-ui text-xl transition duration-200 ease-out"
           >
-            SOURCE
+            CODE
           </motion.button>
         </a>
       </div>
       <motion.div
-        className="hidden sm:inline-flex absolute top-2 right-3"
+        className="hidden sm:inline-flex absolute top-1 right-4"
         whileHover={{ rotate: 360, scale: 1.2 }}
         transition={{ duration: 1 }}
         onClick={() => closeModal()}

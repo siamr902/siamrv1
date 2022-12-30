@@ -4,9 +4,9 @@ import { GiTopHat } from "react-icons/gi";
 import { ThemeCircles, LeftSideCircles } from "../blurs/BlurCircles";
 import OrbCanvas from "../orb/OrbCanvas";
 
-const firstIntroWord = ["W", "E", "L", "C", "O", "M", "E", ","];
+const firstIntroWord = ["W", "e", "l", "c", "o", "m", "e", ","];
 
-const secondIntroWord = ["I", "'", "M"];
+const secondIntroWord = ["I", "'", "m"];
 
 const Hero = () => {
   const [clicked, setClicked] = useState<boolean>(false);
@@ -22,7 +22,7 @@ const Hero = () => {
         <LeftSideCircles />
       </motion.div>
       <motion.div
-        className="font-brush text-6xl md:text-7xl lg:text-8xl relative text-center select-none z-10"
+        className="font-headline text-[8vw] sm:text-5xl md:text-6xl lg:text-7xl relative text-center select-none z-10"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, delay: 6 }}
@@ -30,7 +30,7 @@ const Hero = () => {
         {firstIntroWord.map((letter, idx) => (
           <motion.span
             key={letter + idx}
-            className="relative inline-flex hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:from-darkred hover:to-darkpurple dark:hover:from-skyblue dark:hover:to-skypurple hover:font-semibold"
+            className="relative inline-flex hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:from-darkred hover:to-darkpurple dark:hover:from-skyblue dark:hover:to-skypurple hover:font-bold"
             whileHover={{ scaleX: [1, 0.9, 1], scaleY: [1, 1.5, 1, 1.2, 1] }}
             whileTap={{ scaleY: 1.1 }}
             transition={{ ease: [0.17, 0.23, 0.63, 0.87] }}
@@ -42,7 +42,7 @@ const Hero = () => {
         {secondIntroWord.map((letter) => (
           <motion.span
             key={letter}
-            className="relative inline-flex hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:from-darkred hover:to-darkpurple dark:hover:from-skyblue dark:hover:to-skypurple hover:font-semibold"
+            className="relative inline-flex hover:bg-gradient-to-r hover:bg-clip-text hover:text-transparent hover:from-darkred hover:to-darkpurple dark:hover:from-skyblue dark:hover:to-skypurple hover:font-bold"
             whileHover={{ scaleX: [1, 1.1, 1], scaleY: [1, 1.5, 1, 1.2, 1] }}
             whileTap={{ scaleY: 1.1 }}
             transition={{ ease: [0.17, 0.23, 0.63, 0.87] }}
@@ -51,7 +51,7 @@ const Hero = () => {
           </motion.span>
         ))}
         &nbsp;
-        <span className="tracking-wider bg-clip-text text-transparent font-semibold bg-gradient-to-r dark:from-skyblue dark:to-skypurple from-darkred to-darkpurple">
+        <span className="tracking-wide font-semibold bg-clip-text text-transparent bg-gradient-to-r dark:from-skyblue dark:to-skypurple from-darkred to-darkpurple">
           SI
           <span
             className={`${clicked ? "" : "cursor-pointer"}`}
@@ -65,7 +65,7 @@ const Hero = () => {
           {clicked ? null : (
             <motion.div exit={{ opacity: 0 }} transition={{ duration: 2 }}>
               <GiTopHat
-                className="hidden lg:inline-flex h-8 w-7 absolute -top-[13px] right-14 rotate-[30deg] cursor-pointer text-black dark:text-skypurple"
+                className="hidden lg:inline-flex h-8 w-7 absolute -top-[15px] right-[66px] rotate-[30deg] cursor-pointer text-black dark:text-skypurple"
                 onClick={() => setClicked(true)}
               />
             </motion.div>
@@ -76,7 +76,7 @@ const Hero = () => {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, delay: 6 }}
-        className="max-w-[75%] text-center text-xl sm:text-[22px] md:text-[28px] lg:text-[31px] font-ui z-10 select-none"
+        className="max-w-[70%] text-center text-xl sm:text-[22px] md:text-[26px] lg:text-[28px] font-ui z-10 select-none"
         style={{ lineHeight: "60px" }}
       >
         A <span className="text-darkred dark:text-fuchsia-300">developer</span>{" "}

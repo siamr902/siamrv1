@@ -18,9 +18,13 @@ const variants: Variants = {
   },
 };
 
-const NavigationInfo = () => {
+type Props = {
+  setMenuOpen: (v: boolean) => void;
+};
+
+const NavigationInfo = ({ setMenuOpen }: Props) => {
   const { scrollVertical } = useScrollVertical();
-  console.log(scrollVertical)
+  console.log(scrollVertical);
   const generateSvg = (width: number): ReactNode => {
     return (
       <svg width={width} height="35" xmlns="http://www.w3.org/2000/svg">

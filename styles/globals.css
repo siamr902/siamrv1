@@ -2,6 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import "./circle.css";
 
 
@@ -29,10 +30,10 @@
     @apply bg-[#E30B5C] dark:bg-[#c471ed] rounded-xl h-1 transition duration-500 ease-in-out;
   }
   .menu-item {
-    @apply text-4xl md:text-5xl uppercase font-brush cursor-pointer text-black dark:text-white;
+    @apply text-2xl md:text-3xl uppercase font-headline cursor-pointer text-black dark:text-white;
   }
   .section-title {
-    @apply font-brush text-[14vw] sm:text-7xl tracking-wider lg:text-8xl uppercase;
+    @apply font-headline text-[8vw] sm:text-5xl md:text-6xl lg:text-7xl ;
   }
   .technology {
     @apply w-[20vw] h-[16vh] sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40;
@@ -58,11 +59,10 @@
 /* titles */
 .section-title::before {
   content: "⌇ ";
-  transform: translateY(-50%);
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(to bottom, #f019d7, #66c4c2);
-  font-size: 7.5vw;
+  font-size: larger;
 }
 
 .section-title::after {
@@ -70,7 +70,7 @@
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(to top, #f019d7, #66c4c2);
-  font-size: 7.5vw;
+  font-size: larger;
 }
 
 .section-title.darkbolts::before {
@@ -97,13 +97,13 @@
 
 /* toastify */
 .toast-font {
-  font-family: serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 1rem;
 }
 
 .toast-fontLarge {
   font-size: 18px;
-  font-family: 'serif';
+  font-family: 'Ubuntu', sans-serif;
   text-align: center;
 }
 

@@ -10,7 +10,7 @@ import NavigationInfo from "./NavigationInfo";
 import ThemeToggle from "./ThemeToggle";
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(true);
+  const [darkMode, setDarkMode] = useState<boolean>(false);
   const { setTheme } = useTheme();
 
   const { push } = useRouter();
@@ -84,7 +84,7 @@ const Navbar = () => {
             transition={{ duration: 0.3 }}
             ref={menuRef}
           >
-            <NavigationInfo />
+            <NavigationInfo setMenuOpen={setMenuOpen}/>
           </motion.div>
         ) : null}
       </AnimatePresence>
