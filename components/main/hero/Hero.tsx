@@ -76,15 +76,13 @@ const Hero = () => {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, delay: 6 }}
-        className="max-w-[75%] tracking-wider text-center text-[32px] sm:text-4xl md:text-[44px] font-brush z-10 select-none"
+        className="max-w-[75%] tracking-wider text-center text-xl sm:text-[22px] md:text-[28px] lg:text-[30px] font-ui z-10 select-none"
         style={{ lineHeight: "60px" }}
       >
         A <span className="text-darkred dark:text-fuchsia-300">developer</span>{" "}
         training to enhance his skill sets and seek greater depths of
         understanding of modern frameworks and technologies. Current activities
-        include
-        <span className="dark:text-fuchsia-300 text-red-500"> web</span>{" "}
-        development, UX design, and competitive programming.
+        include web development, UX design, and competitive programming.
       </motion.p>
       <OrbCanvas />
     </div>
