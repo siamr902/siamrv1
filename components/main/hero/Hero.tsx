@@ -76,7 +76,7 @@ const Hero = () => {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, delay: 6 }}
-        className="max-w-[75%] tracking-wider text-center text-xl sm:text-[22px] md:text-[28px] lg:text-[30px] font-ui z-10 select-none"
+        className="max-w-[75%] text-center text-xl sm:text-[22px] md:text-[28px] lg:text-[31px] font-ui z-10 select-none"
         style={{ lineHeight: "60px" }}
       >
         A <span className="text-darkred dark:text-fuchsia-300">developer</span>{" "}
