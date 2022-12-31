@@ -81,7 +81,7 @@ const Hero = () => {
       >
         A <span className="text-darkred dark:text-fuchsia-300">developer</span>{" "}
         training to enhance his skill sets and seek greater depths of
-        understanding of modern frameworks and technologies. Current activities
+        understanding of modern frameworks and technologies. Current endeavors
         include web development, UX design, and competitive programming.
       </motion.p>
       <OrbCanvas />

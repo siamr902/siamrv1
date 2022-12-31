@@ -8,10 +8,14 @@ import { useScrollVertical } from "../../hooks/useScrollVertical";
 import Menu from "./Menu";
 import NavigationInfo from "./NavigationInfo";
 import ThemeToggle from "./ThemeToggle";
+import useMediaQuery from "../../hooks/useMediaQuery";
 
 const Navbar = () => {
-  const [darkMode, setDarkMode] = useState<boolean>(false);
+  const [darkMode, setDarkMode] = useState<boolean>(true);
   const { setTheme } = useTheme();
+  const lg = useMediaQuery("(min-width: 1024px)");
+  const md = useMediaQuery("(min-width: 768px)");
+  const sm = useMediaQuery("(min-width: 640px)");
 
   const { push } = useRouter();
   const { showModal } = useModal();
@@ -32,7 +36,9 @@ const Navbar = () => {
     <>
       <motion.nav
         className={`w-full flex items-center justify-between py-5 px-6 lg:px-10 bg-transparent nav-blur z-[150] sticky top-0 transition-transform duration-500 ease-out ${
-          (scrollUp && !showModal) || scrollVertical < 70 ? "translate-y-0" : "-translate-y-full"
+          (scrollUp && !showModal) || scrollVertical < 70
+            ? "translate-y-0"
+            : "-translate-y-full"
         }`}
       >
         <motion.div
@@ -79,12 +85,25 @@ const Navbar = () => {
       <AnimatePresence mode="wait">
         {menuOpen ? (
           <motion.div
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
-            transition={{ duration: 0.3 }}
+            // animate={{ opacity: 1 }}
+            // exit={{ opacity: 0 }}
+            // transition={{ duration: 0.3 }}
+            initial={{ width: 0 }}
+            animate={{
+              width: lg ? "27%" : md ? "33%" : sm ? "40%" : "50%",
+              transition: { type: "spring", damping: 8, mass: 0.7 },
+            }}
+            exit={{
+              width: 0,
+              transition: {
+                delay: 0.7,
+                duration: 0.4,
+              },
+            }}
             ref={menuRef}
+            className="fixed top-0 left-0 w-[50%] sm:w-[40%] md:w-[33%] lg:w-[27%] min-h-screen z-[160] shadow-lg shadow-[#333] dark:shadow-black dark:bg-[#222] bg-[#ececec] transition"
           >
-            <NavigationInfo setMenuOpen={setMenuOpen}/>
+            <NavigationInfo />
           </motion.div>
         ) : null}
       </AnimatePresence>
