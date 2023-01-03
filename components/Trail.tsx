@@ -1,9 +1,8 @@
 import { motion } from "framer-motion";
-import { useTrail } from "../hooks/useTrail";
-
+import { useModalCursor } from "../contexts/ModalCursorContext";
 
 const Trail = () => {
-  const { trailPosition, click, cursorMount } = useTrail();
+  const { trailPosition, click, cursorMount } = useModalCursor();
 
   return (
     <>

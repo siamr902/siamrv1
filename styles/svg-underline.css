@@ -1,0 +1,13 @@
+.linksvg {
+    position: relative;
+}
+
+.linksvg svg path {
+  stroke-dashoffset: 1000px;
+  stroke-dasharray: 1000px;
+  transition: stroke-dashoffset 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
+}
+
+.linksvg:hover svg path {
+  stroke-dashoffset: 0;
+}

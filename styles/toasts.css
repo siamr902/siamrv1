@@ -1,0 +1,10 @@
+.toast-font {
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1rem;
+}
+
+.toast-fontLarge {
+  font-size: 18px;
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}

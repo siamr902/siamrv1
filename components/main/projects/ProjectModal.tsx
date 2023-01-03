@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { useProjectModal } from "../../../hooks/useProjectModal";
 import { MdOutlineClose } from "react-icons/md";
-import { useModal } from "../../../contexts/ModalContext";
+import { useModalCursor } from "../../../contexts/ModalCursorContext";
 
 type Props = {
   name: string;
@@ -14,7 +14,7 @@ type Props = {
 
 const ProjectModal = ({ demo, description, name, repository, tech }: Props) => {
   const { modalRef } = useProjectModal();
-  const { closeModal } = useModal();
+  const { closeModal } = useModalCursor();
 
   return (
     <div

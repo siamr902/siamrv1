@@ -52,20 +52,20 @@ const Hero = () => {
         ))}
         &nbsp;
         <span className="tracking-wide font-semibold bg-clip-text text-transparent bg-gradient-to-r dark:from-skyblue dark:to-skypurple from-darkred to-darkpurple">
-          SI
+          Si
           <span
             className={`${clicked ? "" : "cursor-pointer"}`}
             onClick={() => setClicked(true)}
           >
-            A
+            a
           </span>
-          M
+          m
         </span>
         <AnimatePresence mode="wait">
           {clicked ? null : (
             <motion.div exit={{ opacity: 0 }} transition={{ duration: 2 }}>
               <GiTopHat
-                className="hidden lg:inline-flex h-8 w-7 absolute -top-[15px] right-[66px] rotate-[30deg] cursor-pointer text-black dark:text-skypurple"
+                className="hidden lg:inline-flex h-8 w-7 absolute -top-[8px] right-[62px] rotate-[30deg] cursor-pointer text-black dark:text-skypurple"
                 onClick={() => setClicked(true)}
               />
             </motion.div>

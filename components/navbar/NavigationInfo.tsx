@@ -23,7 +23,6 @@ const variants: Variants = {
 };
 
 const NavigationInfo = () => {
-
   const generateSvg = (width: number): ReactNode => {
     return (
       <svg width={width} height="35" xmlns="http://www.w3.org/2000/svg">
@@ -47,9 +46,10 @@ const NavigationInfo = () => {
       animate="show"
       exit="start"
       className="flex flex-col items-center justify-evenly text-center min-h-screen p-4"
-      // className="fixed top-0 left-0 w-[50%] sm:w-[40%] md:w-[33%] lg:w-[27%] min-h-screen z-[160] flex flex-col items-center justify-evenly p-4 shadow-lg shadow-[#333] dark:shadow-black dark:bg-[#222] bg-[#ececec] transition text-center"
     >
-      <MenuCircles />
+      <motion.div className="absolute" exit={{ opacity: 0 }}>
+        <MenuCircles />
+      </motion.div>
       {menuItems.map((menuItem) =>
         menuItem.name === "Blog" ? (
           <a

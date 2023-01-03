@@ -4,7 +4,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 @import "./circle.css";
-
+@import "./trail.css";
+@import "./svg-underline.css";
+@import "./toasts.css";
+@import "./hamburger.css";
+@import "./title-decorations.css";
 
 @tailwind base;
 @tailwind components;
@@ -15,7 +19,7 @@
     @apply scroll-smooth;
   }
   body {
-    @apply min-h-screen dark:bg-[#222] bg-zinc-100 scrollbar-thin dark:scrollbar-track-[#111] dark:scrollbar-thumb-[#333] scrollbar-track-white scrollbar-thumb-gray-300 transition ease-linear;
+    @apply min-h-screen dark:bg-[#222] bg-zinc-100 scrollbar-thin dark:scrollbar-track-[#111] dark:scrollbar-thumb-[#333] scrollbar-track-white scrollbar-thumb-gray-300 hover:scrollbar-thumb-gray-400 dark:hover:scrollbar-thumb-[#555] transition ease-linear;
   }
 }
 
@@ -36,7 +40,7 @@
     @apply font-headline text-[8vw] sm:text-5xl md:text-6xl lg:text-7xl;
   }
   .technology {
-    @apply w-[20vw] h-[16vh] sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-40 lg:h-40;
+    @apply w-[20vw] h-[16vh] sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-36 lg:h-36;
   }
   .contact-form {
     @apply outline-none p-4 h-[70px] font-ui text-center sm:shadow-dim dark:bg-[#272727] bg-zinc-100 text-xl sm:text-2xl
@@ -47,91 +51,10 @@
 }
 
 .nav-blur {
-  backdrop-filter: blur(4px);
-  -webkit-backdrop-filter: blur(4px);
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
 }
 
-/* technology icons */
 .technology {
   filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.6));
 }
-
-/* titles */
-.section-title::before {
-  content: "⌇ ";
-  color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(to bottom, #f019d7, #66c4c2);
-  font-size: larger;
-}
-
-.section-title::after {
-  content: " ⌇";
-  color: transparent;
-  background-clip: text;
-  background-image: linear-gradient(to top, #f019d7, #66c4c2);
-  font-size: larger;
-}
-
-.section-title.darkbolts::before {
-  background-image: linear-gradient(to bottom, #c31432, #240b36);
-}
-
-.section-title.darkbolts::after {
-  background-image: linear-gradient(to top, #c31432, #240b36);
-}
-
-/* hamburger icon */
-.open:nth-child(2) {
-  transform: translateY(50px);
-  background-color: transparent;
-}
-
-.open:nth-child(1) {
-  transform: rotate(47deg) translate(7px, 20px);
-}
-
-.open:nth-child(3) {
-  transform: rotate(-47deg) translate(7px, -20px);
-}
-
-/* toastify */
-.toast-font {
-  font-family: 'Ubuntu', sans-serif;
-  font-size: 1rem;
-}
-
-.toast-fontLarge {
-  font-size: 18px;
-  font-family: 'Ubuntu', sans-serif;
-  text-align: center;
-}
-
-/* underlines */
-.linksvg {
-    position: relative;
-}
-
-.linksvg svg path {
-  stroke-dashoffset: 1000px;
-  stroke-dasharray: 1000px;
-  transition: stroke-dashoffset 0.7s cubic-bezier(0.445, 0.05, 0.55, 0.95);
-}
-
-.linksvg:hover svg path {
-  stroke-dashoffset: 0;
-}
-
-/* cursor trail */
-.trail {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 10px;
-  height: 10px;
-  border-radius: 50%;
-  pointer-events: none;
-  filter: blur(4px);
-  -webkit-filter: blur(4px);
-  z-index: 250;
- }

@@ -1,9 +1,9 @@
 import { useEffect, useRef } from "react";
-import { useModal } from "../contexts/ModalContext";
+import { useModalCursor } from "../contexts/ModalCursorContext";
 
 export const useProjectModal = () => {
   const modalRef = useRef<HTMLDivElement>(null);
-  const { closeModal, projectRef } = useModal();
+  const { closeModal, projectRef } = useModalCursor();
 
   useEffect(() => {
     const handleClose = (e: Event) => {

@@ -1,0 +1,23 @@
+.section-title::before {
+  content: "⌇ ";
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to bottom, #f019d7, #66c4c2);
+  font-size: larger;
+}
+
+.section-title::after {
+  content: " ⌇";
+  color: transparent;
+  background-clip: text;
+  background-image: linear-gradient(to top, #f019d7, #66c4c2);
+  font-size: larger;
+}
+
+.section-title.darkbolts::before {
+  background-image: linear-gradient(to bottom, #c31432, #240b36);
+}
+
+.section-title.darkbolts::after {
+  background-image: linear-gradient(to top, #c31432, #240b36);
+}

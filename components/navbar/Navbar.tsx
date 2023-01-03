@@ -2,7 +2,7 @@ import { AnimatePresence, motion, Variants } from "framer-motion";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { useModal } from "../../contexts/ModalContext";
+import { useModalCursor } from "../../contexts/ModalCursorContext";
 import { useSidebar } from "../../hooks/useSidebar";
 import { useScrollVertical } from "../../hooks/useScrollVertical";
 import Menu from "./Menu";
@@ -18,7 +18,7 @@ const Navbar = () => {
   const sm = useMediaQuery("(min-width: 640px)");
 
   const { push } = useRouter();
-  const { showModal } = useModal();
+  const { showModal } = useModalCursor();
 
   const { scrollUp, scrollVertical } = useScrollVertical();
   const { hamburgerRef, menuOpen, menuRef, mounted, setMenuOpen } =
@@ -85,13 +85,10 @@ const Navbar = () => {
       <AnimatePresence mode="wait">
         {menuOpen ? (
           <motion.div
-            // animate={{ opacity: 1 }}
-            // exit={{ opacity: 0 }}
-            // transition={{ duration: 0.3 }}
             initial={{ width: 0 }}
             animate={{
               width: lg ? "27%" : md ? "33%" : sm ? "40%" : "50%",
-              transition: { type: "spring", damping: 8, mass: 0.7 },
+              transition: { type: "spring", damping: 10, mass: 0.7 },
             }}
             exit={{
               width: 0,
