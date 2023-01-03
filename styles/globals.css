@@ -7,7 +7,6 @@
 @import "./trail.css";
 @import "./svg-underline.css";
 @import "./toasts.css";
-@import "./hamburger.css";
 @import "./title-decorations.css";
 
 @tailwind base;
@@ -56,5 +55,18 @@
 }
 
 .technology {
-  filter: drop-shadow(3px 5px 2px rgb(0 0 0 / 0.6));
+  filter: drop-shadow(3px 3px 2px rgb(0 0 0 / 0.6));
+}
+
+.open:nth-child(2) {
+  transform: translateY(50px);
+  background-color: transparent;
+}
+
+.open:nth-child(1) {
+  transform: rotate(47deg) translate(7px, 20px);
+}
+
+.open:nth-child(3) {
+  transform: rotate(-47deg) translate(7px, -20px);
 }

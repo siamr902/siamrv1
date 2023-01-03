@@ -23,7 +23,6 @@ export const projects: ProjectProps[] = [
       "tailwindcss",
       "prisma",
       "postgres",
-      "railway",
       "stripe",
     ],
     demo: "https://crunch-tracker.vercel.app/",

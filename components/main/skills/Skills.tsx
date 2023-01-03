@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import React from "react";
+import { useModalCursor } from "../../../contexts/ModalCursorContext";
 import ThemeCircles, { TechCircles } from "../blurs/BlurCircles";
 import TechIcons from "./TechIcons";
 
@@ -16,8 +17,9 @@ const variants = {
   },
 };
 
-const Technologies = () => {
+const Skills = () => {
   const { theme } = useTheme();
+  const { setCursorHover } = useModalCursor();
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}
@@ -34,10 +36,10 @@ const Technologies = () => {
         viewport={{ once: true }}
         transition={{ type: "spring" }}
       >
-        Techs
+        Skills
       </motion.div>
       <motion.div
-        className="grid grid-cols-2 sm:grid-cols-4 place-items-center gap-x-[22vw] gap-y-[14vw] sm:gap-14 md:gap-16 lg:gap-x-[8rem] lg:gap-y-24 px-8 py-4  justify-center items-center"
+        className="grid grid-cols-2 sm:grid-cols-4 place-items-center gap-x-[22vw] gap-y-[14vw] sm:gap-14 md:gap-16 lg:gap-x-[8.2rem] lg:gap-y-24 px-8 py-4  justify-center items-center"
         variants={variants}
         initial="start"
         whileInView="show"
@@ -50,4 +52,4 @@ const Technologies = () => {
   );
 };
 
-export default Technologies;
+export default Skills;

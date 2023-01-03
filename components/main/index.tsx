@@ -2,7 +2,7 @@ import React from "react";
 import Contact from "./contact/Contact";
 import Hero from "./hero/Hero";
 import Projects from "./projects/Projects";
-import Technologies from "./technologies/Technologies";
+import Skills from "./skills/Skills";
 
 const Content = () => {
   return (
@@ -11,8 +11,8 @@ const Content = () => {
         <section id="hero">
           <Hero />
         </section>
-        <section id="techs">
-          <Technologies />
+        <section id="skills">
+          <Skills />
         </section>
         <section id="projects">
           <Projects />

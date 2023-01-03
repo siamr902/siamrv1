@@ -18,7 +18,7 @@ const Navbar = () => {
   const sm = useMediaQuery("(min-width: 640px)");
 
   const { push } = useRouter();
-  const { showModal } = useModalCursor();
+  const { showModal, setCursorHover } = useModalCursor();
 
   const { scrollUp, scrollVertical } = useScrollVertical();
   const { hamburgerRef, menuOpen, menuRef, mounted, setMenuOpen } =
@@ -35,7 +35,7 @@ const Navbar = () => {
   return (
     <>
       <motion.nav
-        className={`w-full flex items-center justify-between py-5 px-6 lg:px-10 bg-transparent nav-blur z-[150] sticky top-0 transition-transform duration-500 ease-out ${
+        className={`w-full flex items-center justify-between py-5 px-6 lg:px-10 bg-transparent nav-blur z-[150] sticky top-0 transition duration-500 ease-out ${
           (scrollUp && !showModal) || scrollVertical < 70
             ? "translate-y-0"
             : "-translate-y-full"
@@ -52,6 +52,8 @@ const Navbar = () => {
           }}
           whileTap={{ scaleY: 0.8 }}
           transition={{ type: "spring", bounce: 0.5, duration: 1 }}
+          // onMouseOver={() => setCursorHover(true)}
+          // onMouseOut={() => setCursorHover(false)}
           onClick={() => {
             push("/");
           }}

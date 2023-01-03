@@ -10,7 +10,7 @@ const Platform = ({ Icon, src }: LinksProps) => {
   return (
     <>
       <a href={src} target="_blank" rel="noopener noreferrer">
-        <Icon className="w-6 h-6 sm:w-8 sm:h-8 cursor-pointer transition duration-200 ease-out" />
+        <Icon className="w-4 h-4 sm:w-[20px] sm:h-[20px] cursor-pointer transition duration-200 ease-out dark:opacity-60" />
       </a>
     </>
   );

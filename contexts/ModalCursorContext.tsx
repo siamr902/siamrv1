@@ -25,6 +25,8 @@ type ModalProps = {
   trailPosition: TrailProps;
   click: boolean;
   cursorMount: boolean;
+  cursorHover: boolean;
+  setCursorHover: (v: boolean) => void;
 };
 const ModalCursorContext = createContext({} as ModalProps);
 
@@ -37,6 +39,7 @@ export const ModalCursorContextProvider = ({ children }: ProviderProps) => {
   });
   const [click, setClick] = useState<boolean>(false);
   const [cursorMount, setCursorMount] = useState<boolean>(false);
+  const [cursorHover, setCursorHover] = useState<boolean>(false);
 
   useEffect(() => {
     const track = (e: MouseEvent) => {
@@ -73,6 +76,8 @@ export const ModalCursorContextProvider = ({ children }: ProviderProps) => {
         trailPosition,
         click,
         cursorMount,
+        cursorHover,
+        setCursorHover
       }}
     >
       {children}

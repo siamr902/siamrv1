@@ -11,14 +11,14 @@ export const menuItems: MenuProps[] = [
     offsetWidth: 91
   },
   {
-    name: "Techs",
-    href: "/#techs",
+    name: "Skills",
+    href: "/#skills",
     offsetWidth: 110
   },
   {
     name: "Projects",
     href: "/#projects",
-    offsetWidth: 175,
+    offsetWidth: 171,
   },
   {
     name: "Contact",
