@@ -14,7 +14,9 @@ const Footer = () => {
         </div>
         <div className="hidden sm:flex items-center space-x-4">
           {links.map((link) => (
-            <Platform Icon={link.Icon} src={link.src} />
+            <div key={link.src}>
+              <Platform Icon={link.Icon} src={link.src} />
+            </div>
           ))}
         </div>
       </div>
