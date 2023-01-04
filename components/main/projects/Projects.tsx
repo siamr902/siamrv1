@@ -5,7 +5,7 @@ import { projects } from "../../../data/projects";
 import Project from "./Project";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
 import { TiChevronRight } from "react-icons/ti";
-import { useModalCursor } from "../../../contexts/ModalCursorContext";
+import { useModal } from "../../../contexts/ModalContext";
 import { ProjectCircles } from "../blurs/BlurCircles";
 
 const variants: Variants = {
@@ -41,7 +41,7 @@ const Projects = () => {
   const [currentProjectIndex, setCurrentProjectIndex] = useState<number>(0);
   const [animateDirection, setAnimateDirection] = useState<number>(0);
 
-  const { closeModal } = useModalCursor();
+  const { closeModal } = useModal();
 
   const navigateNext = () => {
     setAnimateDirection(1);
@@ -104,14 +104,14 @@ const Projects = () => {
           {projects[currentProjectIndex].bubbleText || "PROJECTS"}
         </div>
         <div
-          className="absolute group top-1/2 z-[110] right-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-100 shadow-lg shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer transition duration-200 ease-in-out active:scale-95"
+          className="absolute group top-1/2 z-[110] right-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-100 shadow-md shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer transition duration-200 ease-in-out active:scale-95"
           onClick={() => navigateNext()}
         >
           <MdNavigateNext className="dark:text-[#888] text-gray-400 group-active:scale-100 transition duration-200 ease-in-out" />
         </div>
         <div
           onClick={() => navigatePrevious()}
-          className="absolute group top-1/2 left-0 z-[110] text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-100 shadow-lg shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer transition duration-200 ease-in-out active:scale-95"
+          className="absolute group top-1/2 left-0 z-[110] text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-100 shadow-md shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer transition duration-200 ease-in-out active:scale-95"
         >
           <MdNavigateBefore className="dark:text-[#888] text-gray-400 group-active:scale-100 transition duration-200 ease-in-out" />
         </div>

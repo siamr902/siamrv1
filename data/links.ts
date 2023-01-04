@@ -1,5 +1,6 @@
 import { IconType } from "react-icons";
 import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { SiPolywork } from "react-icons/si";
 
 type LinksProps = {
   Icon: IconType;
@@ -13,6 +14,10 @@ export const links: LinksProps[] = [
   },
   {
     Icon: FaGithub,
-    src: "https://github.com/siamr902"
+    src: "https://github.com/siamr902",
+  },
+  {
+    Icon: SiPolywork,
+    src: "https://poly.me/siam_rahman",
   },
 ];

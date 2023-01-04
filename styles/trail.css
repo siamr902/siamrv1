@@ -7,4 +7,6 @@
   border-radius: 50%;
   pointer-events: none;
   z-index: 250;
+  filter: blur(4px);
+  -webkit-filter: blur(4px);
  }

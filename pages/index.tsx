@@ -3,12 +3,12 @@ import Head from "next/head";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { Navbar, Footer, Content, Trail } from "../components";
-import { ModalCursorContextProvider } from "../contexts/ModalCursorContext";
+import { ModalContextProvider } from "../contexts/ModalContext";
 
 const Home: NextPage = () => {
   return (
     <>
-      <ModalCursorContextProvider>
+      <ModalContextProvider>
         <Head>
           <title>siamr</title>
           <link rel="shortcut icon" href="siamrbot.ico" />
@@ -22,7 +22,7 @@ const Home: NextPage = () => {
         <Navbar />
         <Content />
         <Footer />
-      </ModalCursorContextProvider>
+      </ModalContextProvider>
     </>
   );
 };

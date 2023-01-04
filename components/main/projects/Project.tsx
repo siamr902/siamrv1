@@ -1,7 +1,7 @@
 import { AnimatePresence, motion, Variants } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 import React from "react";
-import { useModalCursor } from "../../../contexts/ModalCursorContext";
+import { useModal } from "../../../contexts/ModalContext";
 import { getLogoStyles } from "../../../utils/getLogoStyles";
 import ProjectModal from "./ProjectModal";
 
@@ -45,7 +45,7 @@ const Project = ({
   projectLogo,
 }: Props) => {
   const logoStyles = getLogoStyles(name);
-  const { showModal, toggleModal, projectRef } = useModalCursor();
+  const { showModal, toggleModal, projectRef } = useModal();
   
   return (
     <>

@@ -2,7 +2,7 @@ import { motion } from "framer-motion";
 import React from "react";
 import { useProjectModal } from "../../../hooks/useProjectModal";
 import { MdOutlineClose } from "react-icons/md";
-import { useModalCursor } from "../../../contexts/ModalCursorContext";
+import { useModal } from "../../../contexts/ModalContext";
 
 type Props = {
   name: string;
@@ -14,11 +14,11 @@ type Props = {
 
 const ProjectModal = ({ demo, description, name, repository, tech }: Props) => {
   const { modalRef } = useProjectModal();
-  const { closeModal } = useModalCursor();
+  const { closeModal } = useModal();
 
   return (
     <div
-      className="w-[calc(100vw-2rem)] sm:w-[75vw] lg:w-[calc(100vw-20rem)] p-5 fixed text-3xl z-[200] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center space-y-5 dark:bg-[#222] bg-slate-100 shadow-md shadow-gray-400 dark:shadow-black transition"
+      className="w-[calc(100vw-2rem)] sm:w-[75vw] lg:w-[calc(100vw-20rem)] p-5 fixed text-3xl z-[200] top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center text-center space-y-5 dark:bg-[#222] bg-slate-100 shadow-md shadow-gray-400 dark:shadow-black"
       ref={modalRef}
     >
       <div className="text-2xl sm:text-3xl uppercase font-headline font-semibold text-[#222222] dark:text-white">{name}</div>

@@ -2,7 +2,7 @@ import { AnimatePresence, motion, Variants } from "framer-motion";
 import { useTheme } from "next-themes";
 import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
-import { useModalCursor } from "../../contexts/ModalCursorContext";
+import { useModal } from "../../contexts/ModalContext";
 import { useSidebar } from "../../hooks/useSidebar";
 import { useScrollVertical } from "../../hooks/useScrollVertical";
 import Menu from "./Menu";
@@ -18,7 +18,7 @@ const Navbar = () => {
   const sm = useMediaQuery("(min-width: 640px)");
 
   const { push } = useRouter();
-  const { showModal, setCursorHover } = useModalCursor();
+  const { showModal } = useModal();
 
   const { scrollUp, scrollVertical } = useScrollVertical();
   const { hamburgerRef, menuOpen, menuRef, mounted, setMenuOpen } =
@@ -52,8 +52,6 @@ const Navbar = () => {
           }}
           whileTap={{ scaleY: 0.8 }}
           transition={{ type: "spring", bounce: 0.5, duration: 1 }}
-          // onMouseOver={() => setCursorHover(true)}
-          // onMouseOut={() => setCursorHover(false)}
           onClick={() => {
             push("/");
           }}

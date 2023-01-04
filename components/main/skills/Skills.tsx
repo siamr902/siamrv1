@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import React from "react";
-import { useModalCursor } from "../../../contexts/ModalCursorContext";
+import { useModal } from "../../../contexts/ModalContext";
 import ThemeCircles, { TechCircles } from "../blurs/BlurCircles";
 import TechIcons from "./TechIcons";
 
@@ -19,7 +19,6 @@ const variants = {
 
 const Skills = () => {
   const { theme } = useTheme();
-  const { setCursorHover } = useModalCursor();
   return (
     <motion.div
       initial={{ opacity: 0, y: 100 }}

@@ -5,11 +5,10 @@ import React from "react";
 import { BiMessageRoundedDots } from "react-icons/bi";
 import ContactForm from "./ContactForm";
 import { ContactCircles } from "../blurs/BlurCircles";
-import { useModalCursor } from "../../../contexts/ModalCursorContext";
+import { useModal } from "../../../contexts/ModalContext";
 
 const Contact = () => {
   const { theme } = useTheme();
-  const {setCursorHover} = useModalCursor();
   return (
     <motion.div
       initial={{ opacity: 0, y: 75 }}
@@ -26,7 +25,7 @@ const Contact = () => {
           whileInView={{ scale: [1, 1.2, 1] }}
           viewport={{ once: true }}
           transition={{ type: "spring" }}
-          
+
         >
           Contact
         </motion.div>
