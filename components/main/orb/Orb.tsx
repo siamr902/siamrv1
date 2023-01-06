@@ -37,7 +37,7 @@ const Orb = () => {
     <>
       <mesh
         ref={meshRef}
-        scale={2.05}
+        scale={2.04}
         onPointerOver={() => (hover.current = true)}
         onPointerOut={() => (hover.current = false)}
         position={[0, 0, 0]}

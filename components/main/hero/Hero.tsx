@@ -16,7 +16,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ delay: 7, duration: 2 }}
+        transition={{ delay: 6, duration: 2 }}
       >
         <ThemeCircles />
         <LeftSideCircles />
@@ -25,7 +25,7 @@ const Hero = () => {
         className="font-headline text-[8vw] sm:text-5xl md:text-6xl lg:text-7xl relative text-center select-none z-10"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2, delay: 6 }}
+        transition={{ duration: 2, delay: 5 }}
       >
         {firstIntroWord.map((letter, idx) => (
           <motion.span
@@ -75,7 +75,7 @@ const Hero = () => {
       <motion.p
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
-        transition={{ duration: 2, delay: 6 }}
+        transition={{ duration: 2, delay: 5 }}
         className="max-w-[70%] text-center text-xl sm:text-[22px] md:text-[26px] lg:text-[28px] font-ui z-10 select-none"
         style={{ lineHeight: "60px" }}
       >

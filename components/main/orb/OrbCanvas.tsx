@@ -9,7 +9,7 @@ const OrbCanvas = () => {
       className="hidden sm:inline-flex w-full h-full absolute"
       initial={{ opacity: 0, y: "-100vh" }}
       animate={{ opacity: 1, y: 0 }}
-      transition={{ delay: 7, type: "spring", damping: 6, mass: 2.5 }}
+      transition={{ delay: 6, type: "spring", damping: 6, mass: 2.5 }}
     >
       <Canvas camera={{ position: [0, 0, 8] }}>
         <Suspense fallback={null}>

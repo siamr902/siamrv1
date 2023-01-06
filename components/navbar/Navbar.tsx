@@ -61,18 +61,11 @@ const Navbar = () => {
               key={letter}
               variants={child}
               transition={{ duration: 2 }}
-              className="inline-flex"
+              className={`inline-flex ${letter === "!" ? "text-[#DE3163]" : ""}`}
             >
               {letter}
             </motion.span>
           ))}
-          <motion.span
-            variants={child}
-            transition={{ duration: 2 }}
-            className="text-[#DE3163]"
-          >
-            !
-          </motion.span>
         </motion.div>
         <div
           className="flex space-x-16 items-center justify-center"
@@ -115,14 +108,14 @@ const container: Variants = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.5,
+      staggerChildren: 0.4,
     },
   },
 };
 
 const child: Variants = {
-  hidden: { opacity: 0 },
-  show: { opacity: 1 },
+  hidden: { opacity: 0, y: 20, transition: { type: "spring", damping: 7 } },
+  show: { opacity: 1, y: 0, transition: { type: "spring", damping: 7 } },
 };
 
-const siteName = ["S", "I", "A", "M", "R"];
+const siteName = ["S", "I", "A", "M", "R", "!"];

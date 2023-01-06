@@ -12,7 +12,7 @@ const Menu = ({ setMenuOpen, menuOpen }: Props) => {
       <motion.button
         initial={{ opacity: 0, x: 25, y: -100 }}
         animate={{ opacity: 1, x: 0, y: 0 }}
-        transition={{ duration: 2, delay: 4 }}
+        transition={{ duration: 2, delay: 3 }}
         className="flex flex-col items-center justify-center p-4 w-[80px] h-[80px] outline-none"
         onClick={() => setMenuOpen(!menuOpen)}
         aria-label="Menu"
