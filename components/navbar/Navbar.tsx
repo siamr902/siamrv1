@@ -80,7 +80,7 @@ const Navbar = () => {
           <motion.div
             initial={{ width: 0 }}
             animate={{
-              width: lg ? "27%" : md ? "33%" : sm ? "40%" : "50%",
+              width: lg ? "27%" : md ? "33%" : sm ? "40%" : "60%",
               transition: { type: "spring", damping: 10, mass: 0.7 },
             }}
             exit={{

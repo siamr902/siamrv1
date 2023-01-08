@@ -99,13 +99,13 @@ const ContactForm = () => {
         })}
       />
       <textarea
-        className="h-80 md:w-[700px] lg:w-[52vw] xl:w-[700px] resize-none outline-none p-5 font-ui text-center text-2xl sm:shadow-dim dark:bg-[#272727] bg-zinc-100"
+        className="h-80 md:w-[700px] lg:w-[52vw] xl:w-[700px] resize-none outline-none p-5 font-ui text-center text-2xl sm:shadow-dimmer dark:sm:shadow-dim dark:bg-[#272727] bg-zinc-100"
         placeholder="Message"
         {...register("message", { required: true })}
       />
       <button
         type="submit"
-        className="p-4 text-gray-500 dark:text-gray-400 font-ui text-xl sm:text-2xl sm:shadow-dim dark:bg-[#272727] bg-zinc-100 active:scale-95 transiton duration-200 ease-out"
+        className="p-4 text-gray-500 dark:text-gray-400 font-ui text-xl sm:text-2xl sm:shadow-dimmer dark:sm:shadow-dim dark:bg-[#272727] bg-zinc-100 active:scale-95 transiton duration-200 ease-out"
       >
         Send
       </button>

@@ -104,24 +104,24 @@ const Projects = () => {
           {projects[currentProjectIndex].bubbleText || "PROJECTS"}
         </div>
         <div
-          className="absolute group top-1/2 z-[110] right-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-100 shadow-md shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer transition duration-200 ease-in-out active:scale-95"
+          className="absolute group top-1/2 z-[110] right-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-100 shadow-sm dark:shadow-md shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer transition duration-200 ease-in-out active:scale-95"
           onClick={() => navigateNext()}
         >
-          <MdNavigateNext className="dark:text-[#888] text-gray-400 group-active:scale-100 transition duration-200 ease-in-out" />
+          <MdNavigateNext className="dark:text-[#888] text-[#c6cacf] group-active:scale-100 transition duration-200 ease-in-out" />
         </div>
         <div
           onClick={() => navigatePrevious()}
-          className="absolute group top-1/2 left-0 z-[110] text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-100 shadow-md shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer transition duration-200 ease-in-out active:scale-95"
+          className="absolute group top-1/2 left-0 z-[110] text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-100 shadow-sm dark:shadow-md shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer transition duration-200 ease-in-out active:scale-95"
         >
-          <MdNavigateBefore className="dark:text-[#888] text-gray-400 group-active:scale-100 transition duration-200 ease-in-out" />
+          <MdNavigateBefore className="dark:text-[#888] text-[#c6cacf] group-active:scale-100 transition duration-200 ease-in-out" />
         </div>
       </motion.div>
-      <div className="flex gap-4 items-center flex-wrap">
+      <div className="flex gap-4 items-center flex-wrap -translate-y-1/2">
         {Array.from({ length: projects.length }, (_, i) => (
           <div
             key={projects[i].name}
-            className={`w-3 h-3 sm:w-4 sm:h-4 dark:bg-white bg-black rounded-full cursor-pointer ${
-              currentProjectIndex === i && "bg-[#df3674] dark:bg-[#c471ed]"
+            className={`w-3 h-3 sm:w-[18px] sm:h-[18px] dark:not-selected-dark not-selected-light rounded-full cursor-pointer ${
+              currentProjectIndex === i && "dark:selected-project-dark selected-project-light"
             }`}
             onClick={() => {
               setAnimateDirection(i > currentProjectIndex ? 1 : -1);

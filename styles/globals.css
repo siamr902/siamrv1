@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Londrina+Outline&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu&display=swap");
 @import "./circle.css";
 @import "./trail.css";
 @import "./svg-underline.css";
@@ -42,10 +42,25 @@
     @apply w-[20vw] h-[16vh] sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-36 lg:h-36;
   }
   .contact-form {
-    @apply outline-none p-4 h-[70px] font-ui text-center sm:shadow-dim dark:bg-[#272727] bg-zinc-100 text-xl sm:text-2xl
+    @apply outline-none p-4 h-[70px] font-ui text-center dark:sm:shadow-dim sm:shadow-dimmer dark:bg-[#272727] bg-zinc-100 text-xl sm:text-2xl;
   }
   .bubble-display {
-    @apply font-bubble tracking-wider dark:text-[#222] text-zinc-50 text-[11vw] dark:[-webkit-text-stroke:5px_#1f1f1f] [-webkit-text-stroke:5px_#ececec]
+    @apply font-bubble tracking-wider dark:text-[#222] text-zinc-50 text-[11vw] dark:[-webkit-text-stroke:5px_#1f1f1f] [-webkit-text-stroke:5px_#ececec];
+  }
+}
+
+@layer utilities {
+  .selected-project-dark {
+    background: radial-gradient(circle at 6px 6px, #db93ff, #444444) !important;
+  }
+  .selected-project-light {
+    background: radial-gradient(circle at 6px 6px, #c31432, #240b36) !important;
+  }
+  .not-selected-dark {
+    background: radial-gradient(circle at 6px 6px, rgb(255, 255, 255), #777777);
+  }
+  .not-selected-light {
+    background: radial-gradient(circle at 6px 6px, rgb(90, 90, 90), #240b36);
   }
 }
 

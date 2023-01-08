@@ -1,4 +1,5 @@
 import React from "react";
+import Blog from "./blog/Blog";
 import Contact from "./contact/Contact";
 import Hero from "./hero/Hero";
 import Projects from "./projects/Projects";
@@ -16,6 +17,9 @@ const Content = () => {
         </section>
         <section id="projects">
           <Projects />
+        </section>
+        <section id="articles">
+          <Blog />
         </section>
         <section id="contact">
           <Contact />

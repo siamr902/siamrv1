@@ -5,7 +5,6 @@ import React from "react";
 import { BiMessageRoundedDots } from "react-icons/bi";
 import ContactForm from "./ContactForm";
 import { ContactCircles } from "../blurs/BlurCircles";
-import { useModal } from "../../../contexts/ModalContext";
 
 const Contact = () => {
   const { theme } = useTheme();
@@ -25,19 +24,41 @@ const Contact = () => {
           whileInView={{ scale: [1, 1.2, 1] }}
           viewport={{ once: true }}
           transition={{ type: "spring" }}
-
         >
           Contact
         </motion.div>
-        <motion.div
-          className="text-center tracking-wide lg:text-start text-xl sm:text-2xl md:text-3xl font-ui"
-          initial={{ opacity: 0, y: 100 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 1 }}
-        >
-          Have questions or feedback?
-        </motion.div>
+        <div className="flex flex-col space-y-8 items-center lg:items-start">
+          <motion.div
+            className="text-center tracking-wide lg:text-start text-xl sm:text-2xl md:text-3xl font-ui"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
+            Have questions or feedback?
+          </motion.div>
+          <motion.div
+            className="text-center tracking-wider lg:text-start text-xl sm:text-2xl md:text-3xl font-ui"
+            initial={{ opacity: 0, y: 100 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 1 }}
+          >
+            Want to&nbsp;
+            <span className="relative">
+              team
+              <svg width="100%" height="35" xmlns="http://www.w3.org/2000/svg" className="absolute bottom-0 left-0 -z-50 translate-y-[78%]">
+                <path
+                  d="m 0 5 c 0 0 50 -5 80 0 m -70 5 c 0 0 40 -5 60 0"
+                  fill="transparent"
+                  strokeWidth="3"
+                  strokeLinecap="round"
+                  className="dark:stroke-skypurple stroke-[#E30B5C]"
+                />
+              </svg>
+            </span>&nbsp;up?
+          </motion.div>
+        </div>
         <div className="hidden sm:flex flex-col space-y-4 items-center">
           <motion.div
             className="flex space-x-4 items-center"

@@ -16,7 +16,7 @@ const variants: Variants = {
   show: {
     opacity: 1,
     transition: {
-      staggerChildren: 0.25,
+      staggerChildren: 0.27,
       staggerDirection: 1,
     },
   },
@@ -51,7 +51,7 @@ const NavigationInfo = () => {
         <MenuCircles />
       </motion.div>
       {menuItems.map((menuItem) =>
-        menuItem.name === "Blog" ? (
+        menuItem.name === "Blog 🡥" ? (
           <a
             href={menuItem.href}
             key={menuItem.name}

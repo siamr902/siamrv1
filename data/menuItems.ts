@@ -26,8 +26,8 @@ export const menuItems: MenuProps[] = [
     offsetWidth: 153,
   },
   {
-    name: "Blog",
+    name: "Blog 🡥",
     href: "https://www.siamrblogs.com",
-    offsetWidth: 91,
+    offsetWidth: 104,
   },
 ];

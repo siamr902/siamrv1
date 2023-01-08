@@ -19,7 +19,8 @@ module.exports = {
         "headline": ["Ubuntu"],
       },
       boxShadow: {
-        "dim": "rgba(0, 0, 0, 0.18) 0px 2px 4px 0px, rgba(0, 0, 0, 0.5) 0px 2px 16px 0px"
+        "dim": "rgba(0, 0, 0, 0.18) 0px 2px 4px 0px, rgba(0, 0, 0, 0.5) 0px 2px 16px 0px",
+        "dimmer": "rgba(0, 0, 0, 0.18) 0px 2px 4px 0px, rgba(0, 0, 0, 0.5) 0px 0px 5px 0px"
       },
       colors: {
         "skyblue": "#12c2e9",
