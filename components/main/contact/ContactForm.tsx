@@ -1,15 +1,16 @@
-import { motion } from "framer-motion";
-import React, { useEffect, useRef } from "react";
+import { AnimatePresence, motion } from "framer-motion";
+import React, { useEffect, useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
-
 import { useForm, SubmitHandler, SubmitErrorHandler } from "react-hook-form";
 import {
   requiredToast,
   alphaToast,
   emailPatternToast,
-  successToast
+  successToast,
 } from "../../../utils/toastForm";
 import { FormCircles } from "../blurs/BlurCircles";
+import Image from "next/image";
+import cat from "../../../images/scarycat.svg";
 
 interface FormData {
   firstName: string;
@@ -26,7 +27,8 @@ const ContactForm = () => {
     reset,
   } = useForm<FormData>();
 
-  const formRef = useRef<HTMLFormElement | null>(null);
+  const formRef = useRef<HTMLFormElement>(null);
+  const [catClicked, setCatClicked] = useState<boolean>(false);
 
   useEffect(() => {
     reset();
@@ -99,7 +101,7 @@ const ContactForm = () => {
         })}
       />
       <textarea
-        className="h-80 md:w-[700px] lg:w-[52vw] xl:w-[700px] resize-none outline-none p-5 font-ui text-center text-2xl sm:shadow-dimmer dark:sm:shadow-dim dark:bg-[#272727] bg-zinc-100"
+        className="z-10 h-80 md:w-[700px] lg:w-[52vw] xl:w-[700px] resize-none outline-none p-5 font-ui text-center text-2xl sm:shadow-dimmer dark:sm:shadow-dim dark:bg-[#272727] bg-zinc-100"
         placeholder="Message"
         {...register("message", { required: true })}
       />
@@ -109,6 +111,20 @@ const ContactForm = () => {
       >
         Send
       </button>
+      <AnimatePresence mode="wait">
+        {!catClicked ? (
+          <motion.div
+            className="hidden sm:inline-flex absolute bottom-[40%] -left-[7%] -rotate-[90deg] cursor-pointer"
+            whileHover={{ x: -70 }}
+            animate={{ rotate: -90 }}
+            onClick={() => setCatClicked(true)}
+            exit={{ opacity: 0 }}
+            transition={{ x: { duration: 1, ease: "anticipate" }, opacity: { duration: 3 } }}
+          >
+            <Image alt="cat" src={cat} width={150} height={150} />
+          </motion.div>
+        ) : null}
+      </AnimatePresence>
     </motion.form>
   );
 };

@@ -16,7 +16,7 @@ const Hero = () => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         viewport={{ once: true }}
-        transition={{ delay: 6, duration: 2 }}
+        transition={{ delay: 5, duration: 2 }}
       >
         <ThemeCircles />
         <LeftSideCircles />

@@ -51,7 +51,7 @@ export const ContactCircles = () => {
 export const FormCircles = () => {
   return (
     <>
-      <div className="hidden sm:inline-flex stack-circle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 dark:bg-gray-500 bg-gray-300"></div>
+      <div className="hidden sm:inline-flex stack-circle z-50 absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 dark:bg-gray-500 bg-gray-300"></div>
     </>
   );
 };
@@ -69,6 +69,15 @@ export const MenuCircles = () => {
   return (
     <>
       <div className="hidden sm:inline-flex stack-circle absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 dark:bg-gray-500 bg-gray-600 z-[160]"></div>
+    </>
+  );
+};
+
+export const BlogCircles = () => {
+  return (
+    <>
+      <div className="hidden sm:inline-flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-circle-xs dark:bg-gray-400 bg-gray-600"></div>
+      <div className="hidden sm:inline-flex blur-circle-xs dark:bg-purple-200 bg-darkpurple absolute top-[20%] right-[70%]"></div>
     </>
   );
 };

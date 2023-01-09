@@ -47,7 +47,12 @@ const Contact = () => {
             Want to&nbsp;
             <span className="relative">
               team
-              <svg width="100%" height="35" xmlns="http://www.w3.org/2000/svg" className="absolute bottom-0 left-0 -z-50 translate-y-[78%]">
+              <svg
+                width="100%"
+                height="35"
+                xmlns="http://www.w3.org/2000/svg"
+                className="absolute bottom-0 left-0 -z-50 translate-y-[80%]"
+              >
                 <path
                   d="m 0 5 c 0 0 50 -5 80 0 m -70 5 c 0 0 40 -5 60 0"
                   fill="transparent"
@@ -56,7 +61,8 @@ const Contact = () => {
                   className="dark:stroke-skypurple stroke-[#E30B5C]"
                 />
               </svg>
-            </span>&nbsp;up?
+            </span>
+            &nbsp;up?
           </motion.div>
         </div>
         <div className="hidden sm:flex flex-col space-y-4 items-center">

@@ -4,7 +4,6 @@ import React, { useState } from "react";
 import { projects } from "../../../data/projects";
 import Project from "./Project";
 import { MdNavigateBefore, MdNavigateNext } from "react-icons/md";
-import { TiChevronRight } from "react-icons/ti";
 import { useModal } from "../../../contexts/ModalContext";
 import { ProjectCircles } from "../blurs/BlurCircles";
 
@@ -41,7 +40,7 @@ const Projects = () => {
   const [currentProjectIndex, setCurrentProjectIndex] = useState<number>(0);
   const [animateDirection, setAnimateDirection] = useState<number>(0);
 
-  const { closeModal } = useModal();
+  const { closeModal, showModal } = useModal();
 
   const navigateNext = () => {
     setAnimateDirection(1);
@@ -116,20 +115,24 @@ const Projects = () => {
           <MdNavigateBefore className="dark:text-[#888] text-[#c6cacf] group-active:scale-100 transition duration-200 ease-in-out" />
         </div>
       </motion.div>
-      <div className="flex gap-4 items-center flex-wrap -translate-y-1/2">
-        {Array.from({ length: projects.length }, (_, i) => (
-          <div
-            key={projects[i].name}
-            className={`w-3 h-3 sm:w-[18px] sm:h-[18px] dark:not-selected-dark not-selected-light rounded-full cursor-pointer ${
-              currentProjectIndex === i && "dark:selected-project-dark selected-project-light"
-            }`}
-            onClick={() => {
-              setAnimateDirection(i > currentProjectIndex ? 1 : -1);
-              setCurrentProjectIndex(i);
-            }}
-          ></div>
-        ))}
-      </div>
+      {/* Hacky way to make sure the buttons don't clip the modal by turning off display when modal is active */}
+      {!showModal ? (
+        <div className="flex gap-4 items-center flex-wrap -translate-y-1/2">
+          {Array.from({ length: projects.length }, (_, i) => (
+            <div
+              key={projects[i].name}
+              className={`w-3 h-3 sm:w-[18px] sm:h-[18px] dark:not-selected-dark not-selected-light rounded-full cursor-pointer ${
+                currentProjectIndex === i &&
+                "dark:selected-project-dark selected-project-light"
+              }`}
+              onClick={() => {
+                setAnimateDirection(i > currentProjectIndex ? 1 : -1);
+                setCurrentProjectIndex(i);
+              }}
+            ></div>
+          ))}
+        </div>
+      ) : <div className="w-3 h-3 sm:w-[18px] sm:h-[18px]"></div>}
     </motion.div>
   );
 };
