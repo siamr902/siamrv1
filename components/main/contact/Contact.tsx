@@ -14,7 +14,7 @@ const Contact = () => {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true }}
       transition={{ duration: 2 }}
-      className="min-h-[80vh] flex flex-col space-y-12 lg:space-x-8 p-8 lg:flex-row lg:justify-between items-center mt-10 md:mt-20 relative"
+      className="min-h-[80vh] flex flex-col space-y-12 lg:space-x-8 p-8 2xl:px-[5vw] lg:flex-row lg:justify-between items-center mt-10 md:mt-20 relative"
     >
       <div className="relative flex flex-col space-y-16 items-center lg:items-start justify-center">
         <motion.div

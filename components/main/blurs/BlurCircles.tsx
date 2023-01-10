@@ -78,6 +78,7 @@ export const BlogCircles = () => {
     <>
       <div className="hidden sm:inline-flex absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 blur-circle-xs dark:bg-gray-400 bg-gray-600"></div>
       <div className="hidden sm:inline-flex blur-circle-xs dark:bg-purple-200 bg-darkpurple absolute top-[20%] right-[70%]"></div>
+      <div className="hidden sm:inline-flex blur-circle-xxs bg-amber-500 absolute bottom-[35%] right-[5%]"></div>
     </>
   );
 };

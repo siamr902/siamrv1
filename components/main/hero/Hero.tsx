@@ -22,7 +22,7 @@ const Hero = () => {
         <LeftSideCircles />
       </motion.div>
       <motion.div
-        className="font-headline text-[8vw] sm:text-5xl md:text-6xl lg:text-7xl relative text-center select-none z-10"
+        className="font-headline text-[8vw] sm:text-5xl md:text-6xl lg:text-7xl 2xl:text-[84px] relative text-center select-none z-10"
         initial={{ opacity: 0, x: -100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, delay: 5 }}
@@ -65,7 +65,7 @@ const Hero = () => {
           {clicked ? null : (
             <motion.div exit={{ opacity: 0 }} transition={{ duration: 2 }}>
               <GiTopHat
-                className="hidden lg:inline-flex h-8 w-7 absolute -top-[8px] right-[62px] rotate-[30deg] cursor-pointer text-black dark:text-skypurple"
+                className="hidden lg:inline-flex h-8 w-7 absolute -top-[8px] right-[62px] 2xl:right-[73px] rotate-[30deg] cursor-pointer text-black dark:text-skypurple"
                 onClick={() => setClicked(true)}
               />
             </motion.div>
@@ -76,7 +76,7 @@ const Hero = () => {
         initial={{ opacity: 0, x: 100 }}
         animate={{ opacity: 1, x: 0 }}
         transition={{ duration: 2, delay: 5 }}
-        className="max-w-[70%] text-center text-xl sm:text-[22px] md:text-[26px] lg:text-[28px] font-ui z-10 select-none"
+        className="max-w-[70%] 2xl:max-w-[50%] text-center text-xl sm:text-[22px] md:text-[26px] lg:text-[28px] 2xl:text-[32px] font-ui z-10 select-none"
         style={{ lineHeight: "60px" }}
       >
         A <span className="text-darkred dark:text-fuchsia-300">developer</span>{" "}

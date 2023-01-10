@@ -40,14 +40,4 @@ export const projects: ProjectProps[] = [
     projectLogo: visualizerLogo,
     bubbleText: "ALGORITHMS"
   },
-  {
-    name: "SRBLOGS",
-    description:
-      "Articles are mainly geared towards programming and computer science, but I also sprinkle in other topics that interest me and perhaps visitors as well. Due to the relatively broad scope in content — or for lack of a better name — I ensured to title the domain appropriately.",
-    tech: ["nextjs", "mdx", "tailwindcss", "typescript", "framer-motion"],
-    demo: "https://siamrblogs.com/",
-    repository: "https://github.com/siamr902/srblogs",
-    projectLogo: "SRBLOGS",
-    bubbleText: "ARTICLES"
-  },
 ];
