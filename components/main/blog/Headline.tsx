@@ -42,14 +42,14 @@ const Headline = () => {
           {pointerShow && <Pointer />}
           <a href="https://www.siamrblogs.com" target="_blank" rel="noopener noreferrer">
             <motion.div
-              className="text-[14vw] sm:text-[90px] md:text-[100px] lg:text-[120px] font-ceviche uppercase cursor-pointer"
+              className="text-[14vw] sm:text-[90px] md:text-[100px] lg:text-[110px] font-ceviche uppercase cursor-pointer dark:text-white text-gray-900"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: "-15%" }}
               viewport={{ once: true }}
               whileHover={{ x: 10 }}
               whileTap={{ scaleY: 1.5 }}
               transition={{
-                opacity: { duration: 4, delay: 2.2 },
+                opacity: { duration: 3, delay: 2.2 },
                 x: { type: "spring" },
               }}
             >
