@@ -29,7 +29,7 @@ const ProjectModal = ({ demo, description, name, repository, tech }: Props) => {
           </div>
         ))}
       </div>
-      <p className="text-xl leading-10 max-h-[35vh] overflow-y-auto scrollbar-thin font-ui">
+      <p className="text-xl leading-10 max-h-[35vh] overflow-y-auto scrollbar-thin font-ui text-start">
         {description}
       </p>
       <div className="flex space-x-[20vw] items-center">
