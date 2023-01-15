@@ -13,9 +13,9 @@ import useMediaQuery from "../../hooks/useMediaQuery";
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState<boolean>(true);
   const { setTheme } = useTheme();
-  const lg = useMediaQuery("(min-width: 1024px)");
-  const md = useMediaQuery("(min-width: 768px)");
-  const sm = useMediaQuery("(min-width: 640px)");
+  const lgScreen = useMediaQuery("(min-width: 1024px)");
+  const mdScreen = useMediaQuery("(min-width: 768px)");
+  const smScreen = useMediaQuery("(min-width: 640px)");
 
   const { push } = useRouter();
   const { showModal } = useModal();
@@ -80,7 +80,7 @@ const Navbar = () => {
           <motion.div
             initial={{ width: 0 }}
             animate={{
-              width: lg ? "27%" : md ? "33%" : sm ? "40%" : "60%",
+              width: lgScreen ? "27%" : mdScreen ? "33%" : smScreen ? "40%" : "60%",
               transition: { type: "spring", damping: 10, mass: 0.7 },
             }}
             exit={{

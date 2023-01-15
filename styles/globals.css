@@ -39,7 +39,7 @@
     @apply font-headline text-[8vw] sm:text-5xl md:text-6xl lg:text-7xl;
   }
   .technology {
-    @apply w-[20vw] h-[16vh] sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-36 lg:h-36;
+    @apply w-[14vw] h-[12vh] sm:w-24 sm:h-24 md:w-32 md:h-32 lg:w-36 lg:h-36;
   }
   .contact-form {
     @apply outline-none p-4 h-[70px] font-ui text-center dark:sm:shadow-dim sm:shadow-dimmer dark:bg-[#272727] bg-zinc-100 text-xl sm:text-2xl;

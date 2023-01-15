@@ -11,7 +11,7 @@ const variants: Variants = {
   initial: (direction) => {
     return {
       opacity: 0,
-      x: direction === 1 ? -200 : 200,
+      x: direction === 1 ? "-15vw" : "15vw",
     };
   },
   show: {
@@ -27,7 +27,7 @@ const variants: Variants = {
   exit: (direction) => {
     return {
       opacity: 0,
-      x: direction === 1 ? 200 : -200,
+      x: direction === 1 ? "15vw" : "-15vw",
       transition: {
         ease: "easeOut",
       },
@@ -103,16 +103,16 @@ const Projects = () => {
           {projects[currentProjectIndex].bubbleText || "PROJECTS"}
         </div>
         <div
-          className="absolute group top-1/2 z-[110] right-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-100 shadow-sm dark:shadow-md shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer transition duration-200 ease-in-out active:scale-95"
+          className="absolute group top-1/2 z-[110] right-0 text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-200 shadow-sm dark:shadow-md shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer transition duration-200 ease-in-out active:scale-95"
           onClick={() => navigateNext()}
         >
-          <MdNavigateNext className="dark:text-[#888] text-[#c6cacf] group-active:scale-100 transition duration-200 ease-in-out" />
+          <MdNavigateNext className="dark:text-[#888] text-[#b8bbc0] group-active:scale-100 transition duration-200 ease-in-out" />
         </div>
         <div
           onClick={() => navigatePrevious()}
-          className="absolute group top-1/2 left-0 z-[110] text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-100 shadow-sm dark:shadow-md shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer transition duration-200 ease-in-out active:scale-95"
+          className="absolute group top-1/2 left-0 z-[110] text-[6vw] md:text-5xl p-1 dark:bg-[#222] bg-gray-200 shadow-sm dark:shadow-md shadow-gray-500 dark:shadow-[#111] rounded-full cursor-pointer transition duration-200 ease-in-out active:scale-95"
         >
-          <MdNavigateBefore className="dark:text-[#888] text-[#c6cacf] group-active:scale-100 transition duration-200 ease-in-out" />
+          <MdNavigateBefore className="dark:text-[#888] text-[#b8bbc0] group-active:scale-100 transition duration-200 ease-in-out" />
         </div>
       </motion.div>
       {/* Hacky way to make sure the buttons don't clip the modal by turning off display when modal is active */}
