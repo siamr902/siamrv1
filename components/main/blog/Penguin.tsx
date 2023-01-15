@@ -15,7 +15,7 @@ const Penguin = () => {
       whileInView={{ x: 0, rotate: -360, opacity: 1 }}
       viewport={{ once: true }}
       transition={{
-        delay: 1.5,
+        delay: 1,
         type: "spring",
         damping: 8,
         mass: 2,
@@ -35,7 +35,7 @@ const Penguin = () => {
         <motion.div
           className="absolute -top-[50%] left-[2%] w-[25px] h-[25px]"
           initial={{ opacity: 0, y: 0 }}
-          whileInView={{ opacity: 1, y: -8, rotate: 45 }}
+          whileInView={{ opacity: 1, y: -10, rotate: 45 }}
           viewport={{ once: true }}
           transition={{
             opacity: { duration: 1.5 },
@@ -47,7 +47,7 @@ const Penguin = () => {
         <motion.div
           className="absolute -top-[65%] left-[35%] w-[35px] h-[35px]"
           initial={{ opacity: 0, y: 0 }}
-          whileInView={{ opacity: 1, y: -8 }}
+          whileInView={{ opacity: 1, y: -10 }}
           viewport={{ once: true }}
           transition={{
             opacity: { duration: 1.5 },
@@ -59,7 +59,7 @@ const Penguin = () => {
         <motion.div
           className="absolute -top-[30%] left-[30%] w-[20px] h-[20px]"
           initial={{ opacity: 0, y: 0 }}
-          whileInView={{ opacity: 1, y: -8, rotate: -45 }}
+          whileInView={{ opacity: 1, y: -10, rotate: -45 }}
           viewport={{ once: true }}
           transition={{
             opacity: { duration: 1 },

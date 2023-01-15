@@ -115,7 +115,7 @@ const ContactForm = () => {
         {!catClicked ? (
           <motion.div
             className="hidden sm:inline-flex absolute bottom-[40%] -left-[7%] -rotate-[90deg] cursor-pointer"
-            whileHover={{ x: -80 }}
+            whileHover={{ x: -82 }}
             animate={{ rotate: -90 }}
             onClick={() => setCatClicked(true)}
             exit={{ opacity: 0 }}
