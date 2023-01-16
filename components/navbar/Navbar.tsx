@@ -5,10 +5,11 @@ import React, { useEffect, useState } from "react";
 import { useModal } from "../../contexts/ModalContext";
 import { useSidebar } from "../../hooks/useSidebar";
 import { useScrollVertical } from "../../hooks/useScrollVertical";
-import Menu from "./Menu";
+import Menu from "./HamMenu";
 import NavigationInfo from "./NavigationInfo";
 import ThemeToggle from "./ThemeToggle";
 import useMediaQuery from "../../hooks/useMediaQuery";
+import QuickMenu from "./QuickMenu";
 
 const Navbar = () => {
   const [darkMode, setDarkMode] = useState<boolean>(true);
@@ -41,34 +42,37 @@ const Navbar = () => {
             : "-translate-y-full"
         }`}
       >
-        <motion.div
-          className="text-6xl sm:text-7xl font-brush font-semibold cursor-pointer select-none"
-          variants={container}
-          initial="hidden"
-          animate="show"
-          whileHover={{
-            scaleX: [1, 1.3, 1, 1.2, 1, 1.1, 1, 1.05, 1],
-            scaleY: [1, 1.3, 1, 1.2, 1, 1.1, 1, 1.05, 1],
-          }}
-          whileTap={{ scaleY: 0.8 }}
-          transition={{ type: "spring", bounce: 0.5, duration: 1 }}
-          onClick={() => {
-            push("/");
-          }}
-        >
-          {siteName.map((letter) => (
-            <motion.span
-              key={letter}
-              variants={child}
-              transition={{ duration: 2, opacity: { duration: 0 } }}
-              className={`inline-flex ${
-                letter === "!" ? "text-[#DE3163]" : ""
-              }`}
-            >
-              {letter}
-            </motion.span>
-          ))}
-        </motion.div>
+        <div className="relative">
+          <motion.div
+            className="text-6xl sm:text-7xl font-brush font-semibold cursor-pointer select-none"
+            variants={container}
+            initial="hidden"
+            animate="show"
+            whileHover={{
+              scaleX: [1, 1.3, 1, 1.2, 1, 1.1, 1, 1.05, 1],
+              scaleY: [1, 1.3, 1, 1.2, 1, 1.1, 1, 1.05, 1],
+            }}
+            whileTap={{ scaleY: 0.8 }}
+            transition={{ type: "spring", bounce: 0.5, duration: 1 }}
+            onClick={() => {
+              push("/");
+            }}
+          >
+            {siteName.map((letter) => (
+              <motion.span
+                key={letter}
+                variants={child}
+                transition={{ duration: 2, opacity: { duration: 0 } }}
+                className={`inline-flex ${
+                  letter === "!" ? "text-[#DE3163]" : ""
+                }`}
+              >
+                {letter}
+              </motion.span>
+            ))}
+          </motion.div>
+          <QuickMenu />
+        </div>
         <div
           className="flex space-x-16 items-center justify-center"
           ref={hamburgerRef}
@@ -118,7 +122,7 @@ const container: Variants = {
     scale: [1, 1.3, 1],
     transition: {
       staggerChildren: 0.2,
-      scale: { delay: 1.5 }
+      scale: { delay: 1.5 },
     },
   },
 };

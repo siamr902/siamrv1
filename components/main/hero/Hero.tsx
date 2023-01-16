@@ -79,10 +79,10 @@ const Hero = () => {
         className="max-w-full sm:max-w-[75%] 2xl:max-w-[50%] text-center text-xl sm:text-[22px] md:text-[26px] lg:text-[28px] 2xl:text-[32px] font-ui z-10 select-none"
         style={{ lineHeight: "60px" }}
       >
-        A <span className="text-darkred dark:text-fuchsia-300">developer</span>{" "}
-        training to enhance his skill sets and seek greater depths of
-        understanding of modern frameworks and technologies. Current endeavors
-        include web development, UX design, and competitive programming.
+        A developer training to enhance his skill sets and seek greater depths
+        of understanding of modern frameworks and technologies. Current
+        endeavors include web development, UX design, and competitive
+        programming.
       </motion.p>
       <OrbCanvas />
     </div>

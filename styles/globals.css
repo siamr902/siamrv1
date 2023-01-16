@@ -35,6 +35,9 @@
   .menu-item {
     @apply text-2xl md:text-3xl 2xl:text-4xl uppercase font-headline cursor-pointer text-black dark:text-white;
   }
+  .quick-menu {
+    @apply text-[19px] font-ui cursor-pointer hover:text-darkred dark:hover:text-gray-300 transition duration-200 ease-in-out
+  }
   .section-title {
     @apply font-headline text-[8vw] sm:text-5xl md:text-6xl lg:text-7xl;
   }

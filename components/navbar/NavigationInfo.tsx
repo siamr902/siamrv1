@@ -7,14 +7,12 @@ import { MenuCircles } from "../main/blurs/BlurCircles";
 
 const variants: Variants = {
   start: {
-    opacity: 1,
     transition: {
       staggerChildren: 0.1,
       staggerDirection: -1,
     },
   },
   show: {
-    opacity: 1,
     transition: {
       staggerChildren: 0.27,
       staggerDirection: 1,
