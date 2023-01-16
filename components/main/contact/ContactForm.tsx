@@ -101,7 +101,7 @@ const ContactForm = () => {
         })}
       />
       <textarea
-        className="z-10 h-80 md:w-[700px] lg:w-[52vw] xl:w-[700px] resize-none outline-none p-5 font-ui text-center text-2xl sm:shadow-dimmer dark:sm:shadow-dim dark:bg-[#272727] bg-zinc-100"
+        className="z-10 h-80 md:w-[700px] lg:w-[52vw] xl:w-[700px] resize-none outline-none p-5 font-ui text-center text-xl sm:text-2xl sm:shadow-dimmer dark:sm:shadow-dim dark:bg-[#272727] bg-zinc-100"
         placeholder="Message"
         {...register("message", { required: true })}
       />
