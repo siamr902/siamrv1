@@ -1,5 +1,5 @@
 .section-title::before {
-  content: "⌇ ";
+  content: "⚡︎ ";
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(to bottom, #f019d7, #66c4c2);
@@ -7,7 +7,7 @@
 }
 
 .section-title::after {
-  content: " ⌇";
+  content: " ⚡︎";
   color: transparent;
   background-clip: text;
   background-image: linear-gradient(to top, #f019d7, #66c4c2);

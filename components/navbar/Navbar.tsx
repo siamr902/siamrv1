@@ -61,7 +61,9 @@ const Navbar = () => {
               key={letter}
               variants={child}
               transition={{ duration: 2, opacity: { duration: 0 } }}
-              className={`inline-flex ${letter === "!" ? "text-[#DE3163]" : ""}`}
+              className={`inline-flex ${
+                letter === "!" ? "text-[#DE3163]" : ""
+              }`}
             >
               {letter}
             </motion.span>
@@ -80,7 +82,13 @@ const Navbar = () => {
           <motion.div
             initial={{ width: 0 }}
             animate={{
-              width: lgScreen ? "27%" : mdScreen ? "33%" : smScreen ? "40%" : "60%",
+              width: lgScreen
+                ? "27%"
+                : mdScreen
+                ? "33%"
+                : smScreen
+                ? "40%"
+                : "60%",
               transition: { type: "spring", damping: 10, mass: 0.7 },
             }}
             exit={{
@@ -107,15 +115,25 @@ const container: Variants = {
   hidden: { opacity: 0 },
   show: {
     opacity: 1,
+    scale: [1, 1.3, 1],
     transition: {
       staggerChildren: 0.2,
+      scale: { delay: 1.5 }
     },
   },
 };
 
 const child: Variants = {
-  hidden: { opacity: 0, y: 20, transition: { type: "spring", stiffness: 150 } },
-  show: { opacity: 1, y: 0, transition: { type: "spring", stiffness: 150 } },
+  hidden: {
+    opacity: 0,
+    y: 20,
+    transition: { y: { type: "spring", stiffness: 150 } },
+  },
+  show: {
+    opacity: 1,
+    y: 0,
+    transition: { y: { type: "spring", stiffness: 150 } },
+  },
 };
 
 const siteName = ["S", "I", "A", "M", "R", "!"];
