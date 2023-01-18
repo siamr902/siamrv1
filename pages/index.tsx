@@ -10,7 +10,7 @@ const Home: NextPage = () => {
     <>
       <ModalContextProvider>
         <Head>
-          <title>siamr</title>
+          <title>Siam Rahman — Developer Portfolio</title>
           <link rel="shortcut icon" href="siamrbot.ico" />
           <meta
             name="description"

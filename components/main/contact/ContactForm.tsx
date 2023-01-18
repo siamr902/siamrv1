@@ -82,7 +82,10 @@ const ContactForm = () => {
           type="text"
           className="w-1/2 contact-form"
           placeholder="First Name"
-          {...register("firstName", { required: true, pattern: /^[a-z]+$/gi })}
+          {...register("firstName", {
+            required: true,
+            pattern: /^[a-z]+$/gi,
+          })}
         />
         <input
           type="text"
@@ -119,7 +122,10 @@ const ContactForm = () => {
             animate={{ rotate: -90 }}
             onClick={() => setCatClicked(true)}
             exit={{ opacity: 0 }}
-            transition={{ x: { duration: 1, ease: "anticipate" }, opacity: { duration: 3 } }}
+            transition={{
+              x: { duration: 1, ease: "anticipate" },
+              opacity: { duration: 3 },
+            }}
           >
             <Image alt="cat" src={cat} width={150} height={150} />
           </motion.div>
