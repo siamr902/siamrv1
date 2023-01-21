@@ -25,9 +25,10 @@ const NavigationInfo = () => {
     return (
       <svg width={width} height="35" xmlns="http://www.w3.org/2000/svg">
         <path
-          d={`m 0 0 l ${width} 2 l ${width * -1} 3 l ${width} 4 l ${
-            width * -1
-          } 2`}
+          // d={`m 0 2 l ${width} 2 l ${width * -1} 3 l ${width} 4 l ${
+          //   width * -1
+          // } 2`}
+          d={`m 0 2 l ${width} 0 m ${width * -0.8} 8 l ${width * 0.6} 0`}
           fill="transparent"
           strokeWidth="3"
           strokeLinecap="round"
@@ -60,7 +61,7 @@ const NavigationInfo = () => {
               variants={child}
               transition={{ duration: 1, type: "spring" }}
               className="menu-item linksvg"
-              whileTap={{ scale: 0.9 }}
+              whileTap={{ scale: 1.2 }}
             >
               {menuItem.name}
               {generateSvg(menuItem.offsetWidth)}
@@ -72,7 +73,7 @@ const NavigationInfo = () => {
               variants={child}
               transition={{ duration: 1, type: "spring" }}
               className="menu-item linksvg"
-              whileTap={{ scale: 0.9 }}
+              whileTap={{ scale: 1.2 }}
             >
               {menuItem.name}
               {generateSvg(menuItem.offsetWidth)}

@@ -21,9 +21,8 @@ export const LeftSideCircles = () => {
 export const TechCircles = () => {
   return (
     <>
-      <div className="hidden sm:inline-flex blur-circle bg-green-500 absolute top-1/2 left-1/2"></div>
+      {/* <div className="hidden sm:inline-flex blur-circle-xs bg-green-500 absolute top-1/2 left-1/2"></div> */}
       <div className="hidden sm:inline-flex blur-circle bg-gray-400 absolute top-1/2 left-[10%]"></div>
-      {/* <div className="hidden sm:inline-flex blur-circle-xs bg-amber-400 absolute bottom-[5%] right-[15%]"></div> */}
     </>
   );
 };
@@ -42,7 +41,7 @@ export const ContactCircles = () => {
   return (
     <>
       <div className="hidden sm:inline-flex blur-circle-xs bg-skypurple absolute top-[5%] left-[5%]"></div>
-      <div className="hidden sm:inline-flex blur-circle-xs bg-sky-300 absolute top-[5%] left-[40%]"></div>
+      <div className="hidden sm:inline-flex blur-circle-xs dark:bg-blue-800 absolute top-[5%] left-[40%]"></div>
       <div className="hidden sm:inline-flex blur-circle-xs dark:bg-purple-200 absolute -bottom-[5%] left-[0%]"></div>
     </>
   );
