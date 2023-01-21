@@ -7,22 +7,22 @@ type MenuProps = {
 export const menuItems: MenuProps[] = [
   {
     name: "Home",
-    href: "/#",
+    href: "#",
     offsetWidth: 91
   },
   {
     name: "Skills",
-    href: "/#skills",
+    href: "#skills",
     offsetWidth: 110
   },
   {
     name: "Projects",
-    href: "/#projects",
+    href: "#projects",
     offsetWidth: 171,
   },
   {
     name: "Contact",
-    href: "/#contact",
+    href: "#contact",
     offsetWidth: 153,
   },
   {
