@@ -30,7 +30,7 @@
     @apply p-1 rounded-full flex items-center justify-center;
   }
   .ham-menu {
-    @apply bg-[#E30B5C] dark:bg-[#c471ed] rounded-xl h-1 transition duration-500 ease-in-out;
+    @apply bg-[#E30B5C] dark:bg-skypurple rounded-xl h-1 transition duration-500 ease-in-out;
   }
   .menu-item {
     @apply text-2xl md:text-3xl 2xl:text-4xl uppercase font-headline cursor-pointer text-black dark:text-white;
