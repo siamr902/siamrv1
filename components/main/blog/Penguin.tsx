@@ -42,7 +42,7 @@ const Penguin = () => {
             y: { duration: 3, repeat: Infinity, repeatType: "reverse" },
           }}
         >
-          <Image alt="star" src={star} objectFit="contain" layout="fill" />
+          <Image alt="star" src={star} fill />
         </motion.div>
         <motion.div
           className="absolute -top-[65%] left-[35%] w-[35px] h-[35px]"
@@ -54,7 +54,7 @@ const Penguin = () => {
             y: { duration: 3, repeat: Infinity, repeatType: "reverse" },
           }}
         >
-          <Image alt="star" src={star} objectFit="contain" layout="fill" />
+          <Image alt="star" src={star} fill />
         </motion.div>
         <motion.div
           className="absolute -top-[30%] left-[30%] w-[20px] h-[20px]"
@@ -66,7 +66,7 @@ const Penguin = () => {
             y: { duration: 3, repeat: Infinity, repeatType: "reverse" },
           }}
         >
-          <Image alt="star" src={star} objectFit="contain" layout="fill" />
+          <Image alt="star" src={star} fill />
         </motion.div>
       </div>
     </motion.div>

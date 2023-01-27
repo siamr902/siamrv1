@@ -2,6 +2,8 @@ import { motion } from "framer-motion";
 import React from "react";
 import useMediaQuery from "../../../hooks/useMediaQuery";
 import Pointer from "./Pointer";
+import apple from "../../../images/apple.svg";
+import Image from "next/image";
 
 const Headline = () => {
   const pointerShow = useMediaQuery("(min-width: 1024px)");
@@ -40,9 +42,13 @@ const Headline = () => {
         <div className="flex items-center space-x-8">
           {/* random space on small screens */}
           {pointerShow && <Pointer />}
-          <a href="https://www.siamrblogs.com" target="_blank" rel="noopener noreferrer">
+          <a
+            href="https://www.siamrblogs.com"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <motion.div
-              className="text-[14vw] sm:text-[90px] md:text-[100px] lg:text-[110px] font-ceviche uppercase cursor-pointer dark:text-white text-gray-900"
+              className="relative text-[14vw] sm:text-[90px] md:text-[100px] font-eczar cursor-pointer dark:text-white text-gray-900"
               initial={{ opacity: 0 }}
               whileInView={{ opacity: 1, y: "-15%" }}
               viewport={{ once: true }}
@@ -53,7 +59,10 @@ const Headline = () => {
                 x: { type: "spring" },
               }}
             >
-              SR<span className="text-gray-900 dark:text-red-200">BLOGS</span>
+              sr<span className="text-gray-900 dark:text-red-200">bytes</span>
+              <div className="hidden sm:inline absolute top-10 -right-[24%] sm:w-[60px] sm:h-[60px] md:w-[70px] md:h-[70px]">
+                <Image alt="apple" src={apple} fill/>
+              </div>
             </motion.div>
           </a>
         </div>

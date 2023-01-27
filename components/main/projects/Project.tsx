@@ -63,8 +63,7 @@ const Project = ({
             <Image
               src={projectLogo}
               alt={name}
-              objectFit="contain"
-              layout="fill"
+              fill
               className={`${logoStyles}`}
             />
           </div>

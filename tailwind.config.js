@@ -13,7 +13,7 @@ module.exports = {
       },
       fontFamily: {
         "brush": ['Nanum Brush Script'],
-        "ceviche": ['Ceviche One'],
+        "eczar": ['Eczar'],
         "bubble": ['Londrina Outline'],
         "ui": ["Josefin Sans"],
         "headline": ["Ubuntu"],
