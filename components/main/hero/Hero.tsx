@@ -80,7 +80,7 @@ const Hero = () => {
         style={{ lineHeight: "60px" }}
       >
         A developer training to enhance his skill sets and gain
-        proficiency in modern frameworks and technologies. Current
+        proficiency in frameworks and technologies of interest. Current
         endeavors include data analysis, UX design, and speedrunning
         sudoku.
       </motion.p>

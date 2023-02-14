@@ -93,7 +93,7 @@ const NavigationInfo = ({ setMenuOpen }: Props) => {
         onClick={() => setMenuOpen(false)}
         aria-label="Close"
       >
-        <RxCross1 className="w-6 h-6 dark:text-red-400 text-darkred"/>
+        <RxCross1 className="w-6 h-6 dark:text-white text-black"/>
       </motion.button>
     </motion.div>
   );
