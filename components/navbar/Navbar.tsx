@@ -43,7 +43,7 @@ const Navbar = () => {
         }`}
       >
         <div className="relative">
-          <motion.div
+          <motion.h1
             className="text-6xl sm:text-7xl font-brush font-semibold cursor-pointer select-none"
             variants={container}
             initial="hidden"
@@ -70,7 +70,7 @@ const Navbar = () => {
                 {letter}
               </motion.span>
             ))}
-          </motion.div>
+          </motion.h1>
           <QuickMenu />
         </div>
         <div
@@ -87,11 +87,11 @@ const Navbar = () => {
             initial={{ width: 0 }}
             animate={{
               width: lgScreen
-                ? "27%"
+                ? "28%"
                 : mdScreen
-                ? "33%"
+                ? "35%"
                 : smScreen
-                ? "40%"
+                ? "42%"
                 : "60%",
               transition: { type: "spring", damping: 10, mass: 0.7 },
             }}
@@ -103,9 +103,9 @@ const Navbar = () => {
               },
             }}
             ref={menuRef}
-            className="fixed top-0 left-0 w-[50%] sm:w-[40%] md:w-[33%] lg:w-[27%] min-h-screen z-[160] shadow-lg shadow-[#333] dark:shadow-black dark:bg-[#222] bg-[#ececec] transition"
+            className="fixed top-0 right-0 w-[50%] sm:w-[40%] md:w-[33%] lg:w-[27%] min-h-screen z-[160] shadow-lg shadow-[#333] dark:shadow-black dark:bg-[#222] bg-[#ececec] transition"
           >
-            <NavigationInfo />
+            <NavigationInfo setMenuOpen={setMenuOpen}/>
           </motion.div>
         ) : null}
       </AnimatePresence>

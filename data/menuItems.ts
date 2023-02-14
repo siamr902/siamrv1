@@ -18,7 +18,7 @@ export const menuItems: MenuProps[] = [
   {
     name: "Projects",
     href: "#projects",
-    offsetWidth: 160,
+    offsetWidth: 158,
   },
   {
     name: "Contact",
