@@ -79,10 +79,8 @@ const Hero = () => {
         className="max-w-full sm:max-w-[75%] 2xl:max-w-[50%] text-center text-xl sm:text-[22px] md:text-[26px] lg:text-[28px] 2xl:text-[32px] font-ui z-10 select-none"
         style={{ lineHeight: "60px" }}
       >
-        A developer training to enhance his skill sets and gain
-        proficiency in frameworks and technologies of interest. Current
-        endeavors include data analysis, UX design, and speedrunning
-        sudoku.
+        Converting ideas into interactive and intuitive user experiences is my specialty. Current
+        endeavors include UX design, data analysis, deep learning, and speedrunning sudoku.
       </motion.p>
       <OrbCanvas />
     </div>
