@@ -80,7 +80,7 @@ const Hero = () => {
         style={{ lineHeight: "60px" }}
       >
         Converting ideas into interactive and intuitive user experiences is my specialty. Current
-        endeavors include UX design, data analysis, deep learning, and speedrunning sudoku.
+        endeavors include UX design, data analysis, deep learning, and horror literature.
       </motion.p>
       <OrbCanvas />
     </div>
